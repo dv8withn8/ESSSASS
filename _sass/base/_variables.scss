@@ -1,0 +1,94 @@
+
+// Typography
+$arial: "Arial", sans-serif;
+$base-font-family: $arial;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 16px; //16px
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 4px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$body-grey: #54565b;
+$es-blue: #0f8ae7;
+$white: #ffffff;
+$med-grey: #979797;
+$bg-grey: #ededed;
+$light-blue: #74c1ff;
+$grey: #cccccc;
+$es-green: #88c04b;
+$dark-grey: #707070;
+$red: #c71717;
+$dark-green: #4e6c2e;
+$yellow-orange: #febf00;
+$orange: #fe8300;
+$ghost-grey: #f3f3f3;
+$bright-green: #d1ef3e;
+
+// Font Colors
+$base-font-color: $body-grey;
+$action-color: $es-blue;
+
+// Border
+$base-border-color: $med-grey;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $bg-grey;
+$secondary-background-color: $ghost-grey;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Buttons
+$buttons-list: 'button',
+               'input[type="button"]',
+               'input[type="reset"]',
+               'input[type="submit"]';
+
+$all-buttons:        assign-inputs($buttons-list);
+$all-buttons-active: assign-inputs($buttons-list, active);
+$all-buttons-focus:  assign-inputs($buttons-list, focus);
+$all-buttons-hover:  assign-inputs($buttons-list, hover);
+
+$all-button-inputs:        $all-buttons;
+$all-button-inputs-active: $all-buttons-active;
+$all-button-inputs-focus:  $all-buttons-focus;
+$all-button-inputs-hover:  $all-buttons-hover;
+
+// Inputs
+$text-inputs-list: 'input[type="color"]',
+                   'input[type="date"]',
+                   'input[type="datetime"]',
+                   'input[type="datetime-local"]',
+                   'input[type="email"]',
+                   'input[type="month"]',
+                   'input[type="number"]',
+                   'input[type="password"]',
+                   'input[type="search"]',
+                   'input[type="tel"]',
+                   'input[type="text"]',
+                   'input[type="time"]',
+                   'input[type="url"]',
+                   'input[type="week"]',
+                   'input:not([type])',
+                   'textarea';
+
+$all-text-inputs:        assign-inputs($text-inputs-list);
+$all-text-inputs-active: assign-inputs($text-inputs-list, active);
+$all-text-inputs-focus:  assign-inputs($text-inputs-list, focus);
+$all-text-inputs-hover:  assign-inputs($text-inputs-list, hover);
