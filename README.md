@@ -1,3 +1,10 @@
+```
+Note
+
+This is still a WIP! Some stylings are incomplete or missing.
+
+```
+
 # ESSSASS
 #### Extra Space Storage (with) Symantically Awesome StyleSheets
 Style baseline &amp; guide for Breeze.
