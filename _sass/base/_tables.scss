@@ -6,20 +6,38 @@ table {
   width: 100%;
 }
 
-th {
-  border-bottom: 1px solid shade($base-border-color, 25%);
-  font-weight: 600;
-  padding: $small-spacing 0;
-  text-align: left;
-}
-
-td {
-  border-bottom: $base-border;
-  padding: $small-spacing 0;
-}
-
 tr,
 td,
 th {
   vertical-align: middle;
+  border-bottom: $base-border;
+}
+
+th {
+  border-bottom: 1px solid $dark-grey;
+  font-weight: 400;
+  font-size: ms(-2);
+  padding: $small-spacing 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+td {
+  padding: $small-spacing 0;
+}
+
+
+tr {
+  &:nth-of-type(even) {
+    background-color: $table-bg-accent;
+  }
+  &:hover {
+    background-color: $es-blue;
+    color: #fff;
+
+    th {
+      background-color: inherit;
+    }
+  }
+
 }
