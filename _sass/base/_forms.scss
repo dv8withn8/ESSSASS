@@ -14,8 +14,11 @@ select {
 }
 
 label {
-  font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  font-size: floor(ms(-2));
+  font-weight: 300;
+  margin-bottom: 0;
+  color: $med-grey;
+  text-transform: uppercase;
 
   &.required::after {
     content: "*";
@@ -27,27 +30,31 @@ label {
 }
 
 #{$all-text-inputs},
+.form-control, //Bootstrap class override
 select[multiple=multiple] {
-  background-color: $base-background-color;
+  background-color: $ghost-grey;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  line-height: 1;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
   transition: border-color $base-duration $base-timing;
   width: 100%;
+  height: 36px;
 
   &:hover {
     border-color: shade($base-border-color, 20%);
   }
 
   &:focus {
-    border-color: $action-color;
+    border-color: $es-green;
     box-shadow: $form-box-shadow-focus;
     outline: none;
+    background: #fff;
   }
 
   &:disabled {
@@ -83,8 +90,47 @@ input[type="file"] {
   width: 100%;
 }
 
-select {
-  margin-bottom: $base-spacing;
-  max-width: 100%;
-  width: auto;
+// Form Classes
+
+.checkbox,
+.radio {
+  label {
+    text-transform: none;
+    color: $body-grey;
+    font-size: ms(0);
+  }
+}
+
+
+// Input Group Overrides
+
+.input-group-addon {
+  background-color: $grey;
+  border-color: $med-grey;
+}
+
+.input-date {
+
+  .input-group-btn {
+    position: absolute;
+    right: 36px;
+    top: 0;
+  }
+
+  .form-control {
+    position: relative;
+    padding-right: 40px;
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 100;
+      width: 40px;
+      height: 100%;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
 }

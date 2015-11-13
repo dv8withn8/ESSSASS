@@ -1,11 +1,11 @@
 
 // Typography
-$arial: "Arial", sans-serif;
-$base-font-family: $arial;
-$heading-font-family: $base-font-family;
+@include fontFace(Lato, 'https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+$base-font-family: 'Lato', Helvetica, 'Lucida Grande', Arial, sans-serif;
 
 // Font Sizes
-$base-font-size: 16px; //16px
+$base-font-size: ms(0);
 
 // Line height
 $base-line-height: 1.5;
@@ -53,6 +53,10 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $light
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+
+// Add-Ons Below
+// --------------
 
 // Buttons
 $buttons-list: 'button',

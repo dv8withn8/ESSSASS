@@ -2,8 +2,146 @@
 layout: default
 ---
 
-<div>
+<div class="container-fluid">
+<div class="col-md-6 col-md-offset-3">
+  <div class="row">
+  	<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+  	<h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+  	<h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+  	<h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
 
-  <input type="text" placeholder="Hi" /> <button>Button</button>
+  	<p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
+  </div>
 
+  <hr/>
+
+  <div class="row">
+    <button type="button" class="btn">Button</button>
+    <button type="button" class="btn-secondary">Button</button>
+    <button type="button" class="btn-special">Button</button>
+    <button type="button" disabled="disabled">Button</button>
+
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn">Left</button>
+      <button type="button" class="btn">Middle</button>
+      <button type="button" class="btn">Right</button>
+    </div>
+  </div>
+
+  <hr/>
+
+  <form class="row">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">File input</label>
+      <input type="file" id="exampleInputFile">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+    <label>
+      <input type="checkbox" value="">
+      Checkbox
+    </label>
+    </div>
+    <div class="checkbox disabled">
+      <label>
+        <input type="checkbox" value="" disabled>
+        Checkbox disabled
+      </label>
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two
+      </label>
+    </div>
+    <div class="radio disabled">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+    <div class="form-group">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+    </div>
+    <div class="form-group">
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+      </label>
+    </div>
+    <div class="form-group">
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div class="clearfix"></div>
+  <hr />
+
+  <form class="form-inline row">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+        <div class="input-group-addon">.00</div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Pay the man</button>
+  </form>
+
+  <div class="clearfix"></div>
+  <hr/>
+
+  <form class="row">
+    <div class="form-group">
+      <label for="exampleDate1">Date</label>
+      <div class="input-group input-date">
+        <input type="date" class="form-control" id="exampleDate1">
+        <span class="input-group-btn">
+          <button class="btn" type="button">
+            <i class="fa fa-calendar"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
 </div>

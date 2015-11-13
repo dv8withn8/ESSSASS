@@ -1,18 +1,22 @@
-#{$all-buttons} {
+#{$all-buttons},
+.btn,
+.btn-default,
+.btn-primary {
   appearance: none;
   background-color: $action-color;
-  border: 0;
+  border: 1px solid $light-blue;
   border-radius: $base-border-radius;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: ms(-1);
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: .715em $base-spacing;
   text-decoration: none;
+  text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
@@ -20,16 +24,50 @@
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: lighten($action-color, 15%);
     color: #fff;
+    border-color: $light-blue;
+    outline: none;
+  }
+
+  &:active,
+  &:active:hover {
+    background-color: lighten($action-color, 15%);
+    border-color: $light-blue;
+	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+	  outline: none;
   }
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
-
-    &:hover {
-      background-color: $action-color;
-    }
+    background-color: $med-grey;
+    border-color: $grey;
+    color: $grey;
   }
+}
+
+.btn-secondary {
+	background-color: transparent;
+	color: $action-color;
+	border-color: $action-color;
+
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		color: lighten($action-color, 15%);
+		border-color: lighten($action-color, 15%);
+		outline: none;
+	}
+}
+
+.btn-special {
+  background-color: $es-green;
+  border-color: $bright-green;
+
+  &:hover,
+	&:focus {
+		background-color: lighten($es-green, 15%);
+		border-color: $bright-green;
+		outline: none;
+	}
 }
