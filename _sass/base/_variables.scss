@@ -39,7 +39,7 @@ $base-font-color: $body-grey;
 $action-color: $es-blue;
 
 // Border
-$base-border-color: $med-grey;
+$base-border-color: $grey;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
@@ -55,8 +55,36 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 
-// Add-Ons Below
-// --------------
+// Media Query Breakpoints
+// -----------------------------
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+// Grid
+// ----------------------------
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         20px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-md-min !default;
+
+
+// Add-Ons
+// ----------------------------
 
 // Buttons
 $buttons-list: 'button',
