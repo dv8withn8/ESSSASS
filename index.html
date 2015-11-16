@@ -3,17 +3,20 @@ layout: default
 ---
 
 <article>
-<header><h1>Typography</h1></header>
-<div class="examples">
-  	<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
-  	<h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
-  	<h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
-  	<h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
+  <header>
+    <a name="typography"></a>
+    <h1>Typography</h1>
+  </header>
+  <div class="examples">
+    	<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+    	<h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+    	<h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+    	<h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
 
-  	<p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
-</div>
+    	<p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
+  </div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
 <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
@@ -22,27 +25,30 @@ layout: default
 
 <p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Buttons</h1></header>
-<div class="examples">
-  <button type="button" class="btn">Button</button>
-  <button type="button" class="btn-secondary">Button</button>
-  <button type="button" class="btn-special">Button</button>
-  <button type="button" disabled="disabled">Button</button>
+  <header>
+    <a name="buttons"></a>
+    <h1>Buttons</h1>
+  </header>
+  <div class="examples">
+    <button type="button" class="btn">Button</button>
+    <button type="button" class="btn-secondary">Button</button>
+    <button type="button" class="btn-special">Button</button>
+    <button type="button" disabled="disabled">Button</button>
 
-<hr/>
+  <hr/>
 
-  <div class="btn-group" role="group" aria-label="...">
-    <button type="button" class="btn">Left</button>
-    <button type="button" class="btn">Middle</button>
-    <button type="button" class="btn">Right</button>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn">Left</button>
+      <button type="button" class="btn">Middle</button>
+      <button type="button" class="btn">Right</button>
+    </div>
   </div>
-</div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <button type="button" class="btn">Button</button>
 <button type="button" class="btn-secondary">Button</button>
@@ -55,42 +61,45 @@ layout: default
   <button type="button" class="btn">Right</button>
 </div>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Form Example</h1></header>
-<div class="examples">
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputFile">File input</label>
-      <input type="file" id="exampleInputFile">
-      <p class="help-block">Example block-level help text here.</p>
-    </div>
-    <div class="form-group">
-      <button type="submit">Submit</button>
-    </div>
-  </form>
-</div>
+  <header>
+    <a name="forms"></a>
+    <h1>Form Example</h1>
+  </header>
+  <div class="examples">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <form>
     <div class="form-group">
@@ -120,45 +129,49 @@ layout: default
     </div>
   </form>
 {% endhighlight %}
+  </div>
 </article>
 
 <article>
-<header><h1>Checkboxes & Radios</h1></header>
-<div class="examples">
-    <div class="checkbox">
-    <label>
-      <input type="checkbox" value="">
-      Checkbox
-    </label>
-    </div>
-    <div class="checkbox disabled">
+  <header>
+    <a name="checks"></a>
+    <h1>Checkboxes & Radios</h1>
+  </header>
+  <div class="examples">
+      <div class="checkbox">
       <label>
-        <input type="checkbox" value="" disabled>
-        Checkbox disabled
+        <input type="checkbox" value="">
+        Checkbox
       </label>
-    </div>
+      </div>
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" value="" disabled>
+          Checkbox disabled
+        </label>
+      </div>
 
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Option one
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-        Option two
-      </label>
-    </div>
-    <div class="radio disabled">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-        Option three is disabled
-      </label>
-    </div>
-</div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Option one
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          Option two
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+          Option three is disabled
+        </label>
+      </div>
+  </div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <div class="checkbox">
   <label>
@@ -192,36 +205,39 @@ layout: default
   </label>
 </div>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Inline Checkboxes & Radios</h1></header>
-  <div class="examples">
-    <div class="form-group">
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-      </label>
-    </div>
-</div>
-<div class="snippets">
+  <header>
+    <a name="inline-checks"></a>
+    <h1>Inline Checkboxes & Radios</h1>
+  </header>
+    <div class="examples">
+      <div class="form-group">
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+        </label>
+      </div>
+  </div>
+  <div class="snippets">
 {% highlight html %}
 <div class="form-group">
   <label class="checkbox-inline">
@@ -246,27 +262,30 @@ layout: default
   </label>
 </div>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Inline Form</h1></header>
-<div class="examples">
-  <form class="form-inline">
-    <div class="form-group">
-      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-      <div class="input-group">
-        <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-        <div class="input-group-addon">.00</div>
+  <header>
+    <a name="inline-form"></a>
+    <h1>Inline Form</h1>
+  </header>
+  <div class="examples">
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+          <div class="input-group-addon">.00</div>
+        </div>
       </div>
-    </div>
 
-    <button type="submit" class="btn btn-primary">Pay the man</button>
-  </form>
-</div>
+      <button type="submit" class="btn btn-primary">Pay the man</button>
+    </form>
+  </div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <form class="form-inline">
   <div class="form-group">
@@ -281,23 +300,26 @@ layout: default
   <button type="submit" class="btn btn-primary">Pay the man</button>
 </form>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Date Input</h1></header>
-<div class="examples">
-  <div class="form-group">
-    <label for="exampleDate1">Date</label>
-    <div class="input-group input-date">
-      <input type="date" class="form-control" id="exampleDate1">
-      <div class="input-group-addon">
-        <i class="fa fa-calendar"></i>
+  <header>
+    <a name="date"></a>
+    <h1>Date Input</h1>
+  </header>
+  <div class="examples">
+    <div class="form-group">
+      <label for="exampleDate1">Date</label>
+      <div class="input-group input-date">
+        <input type="date" class="form-control" id="exampleDate1">
+        <div class="input-group-addon">
+          <i class="fa fa-calendar"></i>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
 <div class="form-group">
   <label for="exampleDate1">Date</label>
@@ -311,58 +333,61 @@ layout: default
   </div>
 </div>
 {% endhighlight %}
-</div>
+  </div>
 </article>
 
 <article>
-<header><h1>Tables</h1></header>
-<div class="examples">
-  <table class="table">
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr class="payment">
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr class="delinquent">
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
+  <header>
+    <a name="tables"></a>
+    <h1>Tables</h1>
+  </header>
+  <div class="examples">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr class="payment">
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr class="delinquent">
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
 
-<div class="snippets">
+  <div class="snippets">
 {% highlight html %}
-<table class="table">
+  <table class="table">
   <thead>
     <tr>
       <th>First Name</th>
@@ -408,7 +433,10 @@ layout: default
 </article>
 
 <article>
-  <header><h1>Alerts</h1></header>
+  <header>
+    <a name="alerts"></a>
+    <h1>Alerts</h1>
+  </header>
   <div class="examples">
     <div class="alert alert-success" role="alert">Success</div>
     <div class="alert alert-info" role="alert">Info</div>
