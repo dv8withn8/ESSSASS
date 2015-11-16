@@ -20,9 +20,13 @@ This brief documentation is assuming your working environment is already establi
 
 Use Bootstrap elements referenced straight from [their docs](http://getbootstrap.com/css/). The essentials have been overridden to match Breeze application styles.
 
-### Modular Scale
-[https://github.com/modularscale/modularscale-sass]
-This helps us maintain our typography scale with simple SASS functions.
+### Bourbon
+[http://bourbon.io]
+A SASS mixin library to make life easier.
+
+### NEat
+[http://neat.bourbon.io]
+A semantic grid systyem built on Bourbon. It's much more flexible than the grid mixins backed with Bootstrap. Here are so [http://neat.bourbon.io/examples/](usage examples).
 
 ### Font Awesome
 [https://github.com/FortAwesome/font-awesome-sass]

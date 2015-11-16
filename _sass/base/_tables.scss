@@ -10,13 +10,13 @@ tr,
 td,
 th {
   vertical-align: middle;
-  border-bottom: $base-border;
+  border-bottom: 1px solid $grey;
 }
 
 th {
   border-bottom: 1px solid $dark-grey;
   font-weight: 400;
-  font-size: ms(-2);
+  font-size: $font-size-smaller;
   padding: $small-spacing 0;
   text-transform: uppercase;
   text-align: left;
