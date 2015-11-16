@@ -2,8 +2,10 @@
  * Syntax highlighting styles
  */
 .highlight {
-    background: #fff;
-    @extend %vertical-rhythm;
+    background: $ghost-grey;
+    border: $base-border;
+    border-radius: $base-border-radius;
+    padding: 10px;
 
     .highlighter-rouge & {
       background: #eef;

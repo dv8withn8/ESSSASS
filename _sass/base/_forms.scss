@@ -14,12 +14,10 @@ select {
 }
 
 label {
-  font-size: floor(ms(-2));
-  font-weight: 300;
+  font-size: $font-size-smaller;
   margin-bottom: 0;
-  color: $med-grey;
   text-transform: uppercase;
-
+  color: $dark-grey;
   &.required::after {
     content: "*";
   }
@@ -97,7 +95,7 @@ input[type="file"] {
   label {
     text-transform: none;
     color: $body-grey;
-    font-size: ms(0);
+    font-size: modular-scale(0);
   }
 }
 
@@ -106,7 +104,7 @@ input[type="file"] {
 
 .input-group-addon {
   background-color: $grey;
-  border-color: $med-grey;
+  border-color: $base-border-color;
 }
 
 // input[type=date]
@@ -127,7 +125,7 @@ input[type="file"] {
       position: absolute;
       right: 0;
       top: 0;
-      z-index: 100;
+      z-index: 100000;
       width: 40px;
       height: 100%;
       padding: 0;

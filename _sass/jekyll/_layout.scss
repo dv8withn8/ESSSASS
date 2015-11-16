@@ -1,9 +1,52 @@
-.wrapper {
-  @include make-row();
+body {
+  margin: 0 10px;
+}
+.container {
+  @include outer-container();
 }
 .sidebar {
-  @include make-md-column(2);
+  @include media($standard) {
+    @include span-columns(2);
+    position: fixed;
+  }
 }
-.content {
-  @include make-md-column(10);
+.page-content {
+  @include media($standard) {
+    @include span-columns(10);
+    @include shift(2);
+  }
+}
+.examples,
+.snippets {
+  @include media($standard) {
+    @include span-columns(5 of 10);
+  }
+}
+.snippets {
+  @include omega();
+}
+
+article {
+  @include row(table);
+  @include fill-parent();
+  margin-top: 2em;
+  padding: 2em;
+  border-bottom: 1px solid $ghost-grey;
+  border-radius: $base-border-radius * 2;
+  @include transition(all .5s ease-in-out);
+  header > h1 {
+    color: $grey;
+    border-left: 2px solid $grey;
+    padding-left: 1em;
+    margin-top: -1em;
+    margin-left: -1em;
+    @include transition(all .5s ease-in-out);
+  }
+  &:hover {
+    background: lighten($es-blue, 48%);
+      header > h1 {
+        color: $body-grey;
+        border-left-width: 8px;
+      }
+  }
 }

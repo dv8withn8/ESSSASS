@@ -3,6 +3,9 @@ body {
   font-family: $base-font-family;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
   line-height: $base-line-height;
 }
 
@@ -21,22 +24,22 @@ h6 {
 }
 
 h1 {
-	font-size: ms(5);
+	font-size: modular-scale(5);
 }
 h2 {
-	font-size: ms(2);
+	font-size: modular-scale(2);
 }
 h3 {
-	font-size: ms(1);
+	font-size: modular-scale(1);
 	font-weight: 700;
 }
 h4 {
-	font-size: ms(0);
+	font-size: modular-scale(0);
 	font-weight: 700;
 }
 
 p {
-	font-size: ms(0);
+	font-size: modular-scale(0);
 	margin: 0 0 $small-spacing;
 }
 
