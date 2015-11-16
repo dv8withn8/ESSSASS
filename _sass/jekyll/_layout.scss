@@ -27,7 +27,8 @@ body {
 }
 
 article {
-  @include row(table);
+  @include row();
+  @include display-context(table);
   @include fill-parent();
   margin-top: 2em;
   padding: 2em;

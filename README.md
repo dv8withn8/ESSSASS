@@ -28,7 +28,7 @@ A SASS mixin library to make life easier.
 ### Neat
 [http://neat.bourbon.io]
 
-A semantic grid systyem built on Bourbon. It's much more flexible than the grid mixins packed with Bootstrap. Here are so [usage examples](http://neat.bourbon.io/examples/).
+A semantic grid systyem built on Bourbon. It's much more flexible than the grid mixins packed with Bootstrap. Here are some [usage examples](http://neat.bourbon.io/examples/).
 
 ### Font Awesome
 [https://github.com/FortAwesome/font-awesome-sass]

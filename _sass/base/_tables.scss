@@ -24,20 +24,22 @@ th {
 
 td {
   padding: $small-spacing 0;
+  &:first-child {
+    padding-left: $small-spacing;
+  }
+  &:last-child {
+    padding-right: $small-spacing;
+  }
 }
 
 
-tr {
+tbody > tr {
   &:nth-of-type(even) {
     background-color: $table-bg-accent;
   }
   &:hover {
     background-color: $es-blue;
     color: #fff;
-
-    th {
-      background-color: inherit;
-    }
   }
 
 }

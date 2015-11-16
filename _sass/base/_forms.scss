@@ -109,27 +109,8 @@ input[type="file"] {
 
 // input[type=date]
 .input-date {
-
-  .input-group-btn {
-    position: absolute;
-    right: 36px;
-    top: 0;
-  }
-
-  .form-control {
-    position: relative;
-    padding-right: 40px;
-
-    &::-webkit-calendar-picker-indicator {
-      opacity: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 100000;
-      width: 40px;
-      height: 100%;
-      padding: 0;
-      cursor: pointer;
-    }
+  .input-group-addon {
+    background-color: $es-blue;
+    color: #fff;
   }
 }
