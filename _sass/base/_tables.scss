@@ -23,7 +23,7 @@ th {
 }
 
 td {
-  padding: $small-spacing 0;
+  padding: $base-line-height * 1em / 2 0;
   &:first-child {
     padding-left: $small-spacing;
   }

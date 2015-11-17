@@ -1,6 +1,6 @@
 .alert {
-  padding: $small-spacing;
-  margin-bottom: $line-height-computed;
+  padding: $base-spacing;
+  margin-bottom: $base-line-height;
   border: 1px solid transparent;
   border-left-width: 4px;
   border-radius: $base-border-radius;
@@ -50,17 +50,17 @@
 // Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
-  @include alert-variant(lighten($es-green, 45%), $es-green, $es-green);
+  @include alert-variant(tint($es-green, 85%), $es-green, $es-green);
 }
 
 .alert-info {
-  @include alert-variant(lighten($es-blue, 45%), $es-blue, $es-blue);
+  @include alert-variant(tint($es-blue, 85%), $es-blue, $es-blue);
 }
 
 .alert-warning {
-  @include alert-variant(lighten($orange, 45%), $orange, $orange);
+  @include alert-variant(tint($orange, 85%), $orange, $orange);
 }
 
 .alert-danger {
-  @include alert-variant(lighten($red, 45%), $red, $red);
+  @include alert-variant(tint($red, 85%), $red, $red);
 }
