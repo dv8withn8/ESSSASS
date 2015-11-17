@@ -17,8 +17,8 @@ $base-line-height: 1.5; //24px
 
 // Other Sizes
 $base-border-radius: 4px;
-$base-spacing: $base-line-height * 1em / 2;
-$small-spacing: $base-spacing / 2;
+$base-spacing: $base-line-height * 1em / 2; //12px
+$small-spacing: $base-spacing / 2; //6px;
 $base-z-index: 0;
 
 // Colors
@@ -77,8 +77,6 @@ $h4-line-height: $h4-line * $h4-lines;
 $h4-margin-top: 1 * $h4-line;
 $h4-margin-bottom: 1 * $h4-line;
 
-
-
 // Border
 $base-border-color: $med-grey;
 $base-border: 1px solid $base-border-color;
@@ -94,5 +92,3 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $light
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
-
-
