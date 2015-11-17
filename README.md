@@ -5,6 +5,10 @@ This is still a WIP! Some stylings are incomplete or missing.
 
 ```
 
+For coding guidelines, see [the Wiki](https://github.com/dv8withn8/ESSSASS/wiki/ES-Breeze).
+
+***
+
 # ESSSASS
 #### Extra Space Storage (with) Symantically Awesome StyleSheets
 Style baseline &amp; guide for Breeze.
