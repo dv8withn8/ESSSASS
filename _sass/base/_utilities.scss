@@ -1,18 +1,20 @@
 /*
-* Misc Helper Classes and Mixins
-*/
+ * Misc Helper Classes and Mixins
+ */
 
 
-/* Remove Padding from a container
-*
-* Examples:
-*
-* @include no-padding("left");
-* @include no-padding("right");
-* @include no-padding("top");
-* @include no-padding("bottom");
-* @include no-padding("all");
-*/
+/* Remove Padding Mixin
+ *
+ * Examples:
+ *
+ * @include no-padding("left");
+ * @include no-padding("right");
+ * @include no-padding("top");
+ * @include no-padding("bottom");
+ * @include no-padding("all");
+ *
+ */
+
 @mixin no-padding($side) {
   @if $side == 'all' {
       padding: 0 !important;
@@ -21,3 +23,60 @@
       padding-#{$side}: 0 !important;
     }
   }
+
+
+/*
+ * Status Scale
+ *
+ * Use these classes to modify a component's color scheme to adhere to the status scale
+ */
+
+/* Status Mixin (WIP)
+ *
+ * $status
+ * accepted terms: actv, clsd, movn, appt, attn, warn, clen, lost, lead
+ *
+ * $property
+ * accepted values: background, color, border
+ *
+ */
+
+/*
+  @mixin status-scale($status, $property) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  @if $status == 'clsd, urgt, warn' {
+    background-color: $status-warning;
+  }
+}
+*/
+
+// Badges (Temp?)
+.badge {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: $small-spacing $base-spacing;
+  vertical-align: text-bottom;
+
+  &.status-warning {
+    background-color: $status-warning;
+  }
+  &.status-needsAttention {
+    background-color: $status-needs-attention;
+  }
+  &.status-inProgress {
+    background-color: $status-in-progress;
+  }
+  &.status-ready {
+    background-color: $status-ready;
+  }
+  &.status-active {
+    background-color: $status-active;
+  }
+  &.status-inactive {
+    background-color: $status-inactive;
+  }
+}
+

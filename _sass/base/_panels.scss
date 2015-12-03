@@ -247,6 +247,19 @@
   }
 }
 
+// Toggle Caret on accordion collapse/expand
+.panel-title a {
+    display: block;
+}
+.panel-title i {
+  margin-right: $base-spacing;
+}
+.panel-title a.collapsed .fa-caret-right {
+  transform: rotate(0deg);
+}
+.panel-title a .fa-caret-right {
+  transform: rotate(90deg);
+}
 
 /* Contextual variations
 .panel-default {

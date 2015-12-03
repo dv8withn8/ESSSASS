@@ -41,12 +41,14 @@ $ghost-grey: rgb(243, 243, 243);
 $bright-green: rgb(209, 239, 62);
 
 // Status Scale
-$status-warning: $red;
-$status-needs-attention: $orange;
-$status-in-progress: $yellow-orange;
-$status-ready: $bright-green;
-$status-active: $es-green;
-$status-inactive: $dark-grey;
+                                      //REAL WORLD MEANINGS
+
+$status-warning: $red;                // Closed, Warning
+$status-needs-attention: $orange;     // Lead, Needs Attention
+$status-in-progress: $yellow-orange;  // Appointments, Cleaning
+$status-ready: $bright-green;         // Move-in, Reservation
+$status-active: $es-green;            // Active, Paid
+$status-inactive: $dark-grey;         // Lost, Unavailable
 
 // Font Colors
 $base-font-color: $body-grey;
