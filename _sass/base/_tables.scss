@@ -35,11 +35,10 @@ td {
 
 tbody > tr {
   &:nth-of-type(even) {
-    background-color: $table-bg-accent;
+    background-color: $ghost-grey;
   }
   &:hover {
-    background-color: $es-blue;
-    color: #fff;
+    background-color: $hover-grey;
   }
 
 }
