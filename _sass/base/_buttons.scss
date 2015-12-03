@@ -44,6 +44,13 @@
     border-color: $grey;
     color: $grey;
   }
+
+  &.is-active {
+    background-color: lighten($action-color, 15%);
+    border-color: $light-blue;
+	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+	  outline: none;
+  }
 }
 
 .btn-secondary {
@@ -61,6 +68,14 @@
 	&:active,
   &:active:hover {
     color: #fff;
+  }
+
+  &.is-active {
+    background-color: $es-blue;
+    color: $white;
+    border-color: $es-blue;
+	  box-shadow: none;
+	  outline: none;
   }
 }
 
@@ -81,4 +96,15 @@
 	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
 	  outline: none;
   }
+  &.is-active {
+    background-color: lighten($es-green, 15%);
+    border-color: $bright-green;
+	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+	  outline: none;
+	 }
+}
+
+.btn-small {
+  font-size: $font-size-smaller;
+  padding: $small-spacing $base-spacing;
 }
