@@ -3,11 +3,11 @@ $em-base: 16px;
 $modular-scale-ratio: $major-second;
 
 // Typography
-@include font-face('Lato', '../fonts/Lato-Light', 300, $file-formats: eot woff2 woff);
-@include font-face('Lato', '../fonts/Lato-Regular', 400, $file-formats: eot woff2 woff);
-@include font-face('Lato', '../fonts/Lato-Bold', 700, $file-formats: eot woff2 woff);
+@include font-face("Lato", "../fonts/Lato-Light", 300, $file-formats: eot woff2 woff);
+@include font-face("Lato", "../fonts/Lato-Regular", 400, $file-formats: eot woff2 woff);
+@include font-face("Lato", "../fonts/Lato-Bold", 700, $file-formats: eot woff2 woff);
 
-$base-font-family: 'Lato', Helvetica, 'Lucida Grande', Arial, sans-serif;
+$base-font-family: "Lato", Helvetica, "Lucida Grande", Arial, sans-serif;
 
 // Font Sizes
 $base-font-size: $em-base;
@@ -18,31 +18,41 @@ $base-line-height: 1.5; //24px
 // Other Sizes
 $base-border-radius: 4px;
 $base-spacing: $base-line-height * 1em / 2; //12px
+$large-spacing: $base-line-height * 1em; //24px
 $small-spacing: $base-spacing / 2; //6px;
 $base-z-index: 0;
 
 // Colors
-$body-grey: #54565b;
-$es-blue: #0f8ae7;
-$white: #ffffff;
-$med-grey: #979797;
-$bg-grey: #ededed;
-$light-blue: #74c1ff;
-$grey: #cccccc;
-$es-green: #88c04b;
-$dark-grey: #707070;
-$red: #c71717;
-$dark-green: #4e6c2e;
-$yellow-orange: #febf00;
-$orange: #fe8300;
-$ghost-grey: #f3f3f3;
-$bright-green: #d1ef3e;
+$body-grey: rgb(84, 86, 91);
+$es-blue: rgb(15, 138, 231);
+$white: rgb(255, 255, 255);
+$med-grey: rgb(151, 151, 151);
+$bg-grey: rgb(237, 237, 237);
+$light-blue: rgb(116, 193, 255);
+$grey: rgb(204, 204, 204);
+$es-green: rgb(136, 192, 75);
+$dark-grey: rgb(112, 112, 112);
+$hover-grey: rgb(216, 216, 216);
+$red: rgb(199, 23, 23);
+$dark-green: rgb(78, 108, 46);
+$yellow-orange: rgb(254, 191, 0);
+$orange: rgb(254, 131, 0);
+$ghost-grey: rgb(243, 243, 243);
+$bright-green: rgb(209, 239, 62);
+
+// Status Scale
+$status-warning: $red;
+$status-needs-attention: $orange;
+$status-in-progress: $yellow-orange;
+$status-ready: $bright-green;
+$status-active: $es-green;
+$status-inactive: $dark-grey;
 
 // Font Colors
 $base-font-color: $body-grey;
 $action-color: $es-blue;
 
-//Font Scale
+// Font Scale
 $font-size-smaller: modular-scale(-2); //12px
 $font-size-small:   modular-scale(-1); //14px
 $font-size-base:    modular-scale(0);  //16px
@@ -50,20 +60,18 @@ $font-size-large:   modular-scale(1);  //18px
 $font-size-larger:  modular-scale(2);  //20px
 $font-size-largest: modular-scale(5);  //29px
 
-
+// Headings
 $h1-line: 1.5rem;
 $h1-lines: 2;
 $h1-line-height: $h1-line * $h1-lines;
 $h1-margin-top: 2 * $h1-line;
 $h1-margin-bottom: 1 * $h1-line;
 
-
 $h2-line: 1.5rem;
 $h2-lines: 1.5;
 $h2-line-height: $h2-line * $h2-lines;
 $h2-margin-top: 2 * $h2-line;
 $h2-margin-bottom: 1 * $h2-line;
-
 
 $h3-line: 1.5rem;
 $h3-lines: 1.5;
@@ -92,3 +100,38 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $light
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Panels (aka accordians)
+$panel-bg:                    #fff !default;
+$panel-body-padding:          $small-spacing !default;
+$panel-heading-padding:       $base-line-height * 1em / 2;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         0 !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          $grey !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $body-grey !default;
+$panel-default-border:        $med-grey !default;
+$panel-default-heading-bg:    #fff !default;
+
+$panel-primary-text:          #fff !default;
+$panel-primary-border:        $med-grey !default;
+$panel-primary-heading-bg:    #fff !default;
+
+$panel-success-text:          $es-green !default;
+$panel-success-border:        $es-green !default;
+$panel-success-heading-bg:    #fff !default;
+
+$panel-info-text:             $grey !default;
+$panel-info-border:           $grey !default;
+$panel-info-heading-bg:       $med-grey !default;
+
+$panel-warning-text:          $status-needs-attention !default;
+$panel-warning-border:        $status-needs-attention !default;
+$panel-warning-heading-bg:    #fff !default;
+
+$panel-danger-text:           $status-warning !default;
+$panel-danger-border:         $status-warning !default;
+$panel-danger-heading-bg:     #fff !default;

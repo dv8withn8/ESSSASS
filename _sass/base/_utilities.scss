@@ -1,0 +1,23 @@
+/*
+* Misc Helper Classes and Mixins
+*/
+
+
+/* Remove Padding from a container
+*
+* Examples:
+*
+* @include no-padding("left");
+* @include no-padding("right");
+* @include no-padding("top");
+* @include no-padding("bottom");
+* @include no-padding("all");
+*/
+@mixin no-padding($side) {
+  @if $side == 'all' {
+      padding: 0 !important;
+  }
+  @else {
+      padding-#{$side}: 0 !important;
+    }
+  }

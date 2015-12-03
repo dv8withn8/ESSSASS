@@ -1,9 +1,8 @@
 .alert {
   padding: $base-spacing;
-  margin-bottom: $base-line-height;
+  margin-bottom: $large-spacing;
   border: 1px solid transparent;
   border-left-width: 4px;
-  border-radius: $base-border-radius;
 
   // Headings for larger alerts
   h4 {
@@ -34,7 +33,7 @@
 
 .alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
 .alert-dismissible {
-  padding-right: ($alert-padding + 20);
+  padding-right: 2em;
 
   // Adjust close link position
   .close {

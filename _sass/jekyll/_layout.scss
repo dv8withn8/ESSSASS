@@ -1,60 +1,58 @@
 body {
   margin: 0 10px;
 }
-.container {
-  @include outer-container();
-}
+
 .sidebar {
-  @include media($standard) {
-    @include span-columns(2);
-    position: fixed;
-  }
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $body-grey;
+  height: 100%;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
+  @include no-padding("all");
 }
 .page-content {
-  @include media($standard) {
-    @include span-columns(10);
-    @include shift(2);
-  }
+
 }
 .examples,
 .snippets {
-  @include media($standard) {
-    @include span-columns(5 of 10);
-  }
+
 }
 .snippets {
-  @include omega();
+  margin: $large-spacing 0;
 }
 
 article {
-  @include row();
-  @include display-context(table);
-  @include fill-parent();
   margin-top: 2em;
-  padding: 2em;
+  padding: 0 2em 2em;
   border-bottom: 1px solid $ghost-grey;
   border-radius: $base-border-radius * 2;
   @include transition(all .5s ease-in-out);
   header > h1 {
-    color: $grey;
-    border-left: 2px solid $grey;
-    padding-left: 1em;
-    margin-top: -1em;
-    margin-left: -1em;
+    margin-bottom: $large-spacing;
+    font-weight: 300;
+    color: $med-grey;
     @include transition(all .5s ease-in-out);
-  }
-  &:hover {
-    background: lighten($es-blue, 48%);
-      header > h1 {
-        color: $body-grey;
-        border-left-width: 8px;
-      }
   }
 }
 
 nav {
+  color: #fff;
+  h5 {
+    margin: $large-spacing;
+  }
   li {
-    padding: $small-spacing;
+    display: block;
+  }
+  a {
+    display: block;
+    color: #fff;
+    padding: $small-spacing $large-spacing;
+    &:hover {
+      background: $es-blue;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   li > ul {
@@ -76,11 +74,11 @@ nav {
 }
 
 #logo {
-  width: 158px;
-  height: 71px;
-  background-image: url('http://www.extraspace.com/images/electriclime/redesign-sprite.png');
+  width: 100px;
+  height: 46px;
+  background-image: url('../img/ess.png');
   background-repeat: no-repeat;
-  background-position: -1px -81px;
   display: block;
-  margin: 1em 0 2em;
+  margin: $large-spacing auto;
 }
+
