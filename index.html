@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="row">
+<article>
   <header>
     <a name="typography"></a>
     <h1>Typography</h1>
@@ -28,12 +28,13 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="buttons"></a>
     <h1>Buttons</h1>
   </header>
   <div class="examples">
+    <h4>Standard Buttons</h4>
     <button type="button" class="btn">Button</button>
     <button type="button" class="btn-secondary">Button</button>
     <button type="button" class="btn-special">Button</button>
@@ -41,6 +42,7 @@ layout: default
 
   <hr/>
 
+    <h4>Small Buttons</h4>
     <button type="button" class="btn btn-small">Button</button>
     <button type="button" class="btn-secondary btn-small">Button</button>
     <button type="button" class="btn-special btn-small">Button</button>
@@ -48,6 +50,7 @@ layout: default
 
   <hr/>
 
+    <h4>Button Groups</h4>
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn">Left</button>
       <button type="button" class="btn">Middle</button>
@@ -93,7 +96,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="forms"></a>
     <h1>Form Example</h1>
@@ -161,7 +164,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="checks"></a>
     <h1>Checkboxes & Radios</h1>
@@ -239,7 +242,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="inline-checks"></a>
     <h1>Inline Checkboxes & Radios</h1>
@@ -299,7 +302,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="inline-form"></a>
     <h1>Inline Form</h1>
@@ -337,7 +340,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="date"></a>
     <h1>Date Input</h1>
@@ -370,7 +373,7 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<article>
   <header>
     <a name="tables"></a>
     <h1>Tables</h1>
@@ -466,7 +469,8 @@ layout: default
 </div>
 </article>
 
-<article class="row">
+<!-- ALERTS -->
+<article>
   <header>
     <a name="alerts"></a>
     <h1>Alerts</h1>
@@ -487,7 +491,8 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<!-- ACCORDIONS -->
+<article>
   <header>
     <a name="accordions"></a>
     <h1>Accordions</h1>
@@ -588,7 +593,8 @@ layout: default
   </div>
 </article>
 
-<article class="row">
+<!-- BADGES -->
+<article>
   <header>
     <a name="badges"></a>
     <h1>Badges</h1>
@@ -618,9 +624,89 @@ layout: default
   </div>
 </article>
 
+<!-- TABS -->
+<article>
+  <header>
+    <a name="tabs"></a>
+    <h1>Tabs</h1>
+  </header>
+  <div class="examples">
+    <div class="panel-group" id="tabs" role="tablist" aria-multiselectable="true">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#sectionA">Section A</a></li>
+        <li><a data-toggle="tab" href="#sectionB">Section B</a></li>
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+                <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+            <h3>Section A</h3>
+            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+        </div>
+        <div id="sectionB" class="tab-pane fade">
+            <h3>Section B</h3>
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+        </div>
+        <div id="dropdown1" class="tab-pane fade">
+            <h3>Dropdown 1</h3>
+            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
+        </div>
+        <div id="dropdown2" class="tab-pane fade">
+            <h3>Dropdown 2</h3>
+            <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+    </div>
+</div>
+  </div>
+
+  <div class="snippets">
+{% highlight html %}
+<div class="panel-group" id="tabs" role="tablist" aria-multiselectable="true">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#sectionA">Section A</a></li>
+    <li><a data-toggle="tab" href="#sectionB">Section B</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+            <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+        </ul>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div id="sectionA" class="tab-pane fade in active">
+        <h3>Section A</h3>
+        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+    </div>
+    <div id="sectionB" class="tab-pane fade">
+        <h3>Section B</h3>
+        <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+    </div>
+    <div id="dropdown1" class="tab-pane fade">
+        <h3>Dropdown 1</h3>
+        <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
+    </div>
+    <div id="dropdown2" class="tab-pane fade">
+        <h3>Dropdown 2</h3>
+        <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</article>
+
 <!-- Entry Sample Placeholder -->
-<article class="row">
-  <header><h1>Placeholder</h1></header>
+<article>
+  <header>
+    <a name=""></a>
+    <h1>Placeholder</h1>
+  </header>
   <div class="examples">
 
   </div>
