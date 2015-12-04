@@ -1,0 +1,54 @@
+/* Breeze Tabs */
+
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs > li > a {
+  margin: 0;
+  color: $body-grey;
+  line-height: 1;
+  background: $bg-grey;
+  border: 1px solid $med-grey;
+  border-radius: 0;
+}
+
+.nav-tabs > li:first-child > a {
+  border-right: none;
+  border-radius: 4px 0 0 0;
+}
+
+.nav-tabs > li:last-child > a {
+  border-left: none;
+  border-radius: 0 4px 0 0;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: inherit;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: $es-green;
+    background-color: $white;
+    border-color: $med-grey;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.nav-tabs > li.active:first-child > a:hover {
+  border-right: none;
+}
+
+.nav-tabs > li.active:last-child > a:hover {
+  border-left: none;
+}
+
+.tab-content {
+  padding: $large-spacing;
+  border: 1px solid $med-grey;
+  border-radius: $base-border-radius;
+  border-top-left-radius: 0;
+}
