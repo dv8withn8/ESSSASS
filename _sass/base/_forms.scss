@@ -90,7 +90,6 @@ input[type="file"] {
 }
 
 // Form Classes
-
 .checkbox,
 .radio {
   label {
@@ -102,7 +101,6 @@ input[type="file"] {
 
 
 // Input Group Overrides
-
 .input-group-addon {
   background-color: $grey;
   border-color: $base-border-color;
@@ -114,4 +112,36 @@ input[type="file"] {
     background-color: $es-blue;
     color: #fff;
   }
+}
+
+.has-error {
+  label {
+    color: $red;
+  }
+}
+
+.has-error .form-control {
+  color: $red;
+  border-color: $red;
+  background-color: tint($red, 85%);
+
+  &:focus {
+    box-shadow: none;
+    border-color: $red;
+  }
+}
+
+.has-error .help-block {
+  color: $red;
+  font-size: $font-size-smaller;
+  margin-top: none;
+  padding-left: .5em;
+  border-left: 2px solid $red;
+/*
+  &:before {
+    font-family: "FontAwesome";
+    content: '\f071';
+    margin-right: .25em;
+  }
+*/
 }
