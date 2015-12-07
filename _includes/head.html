@@ -24,6 +24,15 @@
           return $(title).children(".popover-heading").html();
         }
       });
+      $("[data-toggle=popover]").click(function (e) {
+          e.stopPropagation();
+      });
+
+      $(document).click(function (e) {
+          if (($(".popover").has(e.target).length == 0) || $(e.target).is("[data-dismiss=popover]")) {
+              $("[data-toggle=popover]").popover("hide");
+          }
+      });
     });
   </script>
 </head>
