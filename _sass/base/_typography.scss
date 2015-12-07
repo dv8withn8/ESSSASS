@@ -17,6 +17,7 @@ h5,
 h6 {
   font-family: $base-font-family;
   line-height: $base-line-height;
+  font-weight: 400;
   b {
 	  font-weight: 700;
   }
@@ -24,6 +25,7 @@ h6 {
 
 h1 {
 	font-size: $font-size-largest;
+	font-weight: 700;
 	line-height: $h1-line-height;
 	margin-top: $h1-margin-top;
 	margin-bottom: $h1-margin-bottom;
@@ -80,3 +82,11 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+.txt-support,
+caption {
+  font-size: $font-size-small;
+  color: $med-grey;
+}
+
+
