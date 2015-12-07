@@ -175,9 +175,10 @@ layout: default
   </header>
   <div class="examples">
     <form>
-      <div class="form-group">
+      <div class="form-group has-error">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <p class="help-block">Not a valid email address!</p>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
@@ -195,6 +196,7 @@ layout: default
       <div class="form-group">
         <label for="exampleInputFile">File input</label>
         <input type="file" id="exampleInputFile">
+
         <p class="help-block">Example block-level help text here.</p>
       </div>
       <div class="form-group">
@@ -206,32 +208,32 @@ layout: default
   <div class="snippets">
 {% highlight html %}
 <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputFile">File input</label>
-      <input type="file" id="exampleInputFile">
-      <p class="help-block">Example block-level help text here.</p>
-    </div>
-    <div class="form-group">
-      <button type="submit">Submit</button>
-    </div>
-  </form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <select class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="form-group">
+    <button type="submit">Submit</button>
+  </div>
+</form>
 {% endhighlight %}
   </div>
 </article>
@@ -778,6 +780,103 @@ layout: default
         <button type="button">Save changes</button>
       </div>
     </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</article>
+
+<!-- POP-OVERS -->
+<article>
+  <header>
+    <a name="pop-overs"></a>
+    <h1>Pop-Overs</h1>
+  </header>
+  <div class="examples">
+    <button type="button" data-container="body" data-toggle="popover" data-popover-content="#po-content-1" data-placement="right">
+      Pop It
+    </button>
+
+    <div class="hidden" id="po-content-1">
+      <div class="popover-heading">
+        EDIT ADDRESS
+      </div>
+      <div class="popover-body">
+         <form>
+          <div class="form-group">
+            <label for="exampleInputAddress">Street Address</label>
+            <input type="email" class="form-control" id="exampleInputAddress" placeholder="Address">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputUnit">Unit</label>
+            <input type="text" class="form-control" id="exampleInputUnit" placeholder="State">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCity">City</label>
+            <input type="text" class="form-control" id="exampleInputCity" placeholder="State">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputState">State</label>
+            <select class="form-control" id="exampleInputState">
+              <option>Utah</option>
+              <option>Washington</option>
+              <option>Illinois</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputZip">Zip</label>
+            <input type="text" class="form-control" id="exampleInputZip" placeholder="Zip Code">
+          </div>
+          <div class="form-group">
+            <button type="submit"><i class="fa fa-check fa-lg"></i></button>
+            <button type="button" class="btn-secondary"><i class="fa fa-remove fa-lg"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="snippets">
+{% highlight html %}
+<button type="button" data-container="body" data-toggle="popover" data-popover-content="#po-content-1" data-placement="right">
+  Pop It
+</button>
+
+<div class="hidden" id="po-content-1">
+  <div class="popover-heading">
+    EDIT ADDRESS
+  </div>
+  <div class="popover-body">
+     <form>
+      <div class="form-group">
+        <label for="exampleInputAddress">Street Address</label>
+        <input type="email" class="form-control" id="exampleInputAddress" placeholder="Address">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUnit">Unit</label>
+        <input type="text" class="form-control" id="exampleInputUnit" placeholder="State">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputCity">City</label>
+        <input type="text" class="form-control" id="exampleInputCity" placeholder="State">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputState">State</label>
+        <select class="form-control" id="exampleInputState">
+          <option>Utah</option>
+          <option>Washington</option>
+          <option>Illinois</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputZip">Zip</label>
+        <input type="text" class="form-control" id="exampleInputZip" placeholder="Zip Code">
+      </div>
+      <div class="form-group">
+        <button type="submit"><i class="fa fa-check fa-lg"></i></button>
+        <button type="button" class="btn-secondary"><i class="fa fa-remove fa-lg"></i></button>
+      </div>
+    </form>
   </div>
 </div>
 {% endhighlight %}

@@ -13,7 +13,7 @@
   padding: $base-spacing;
   background: $white;
   border-bottom: 1px solid $med-grey;
-  border-radius: 4px 4px 0 0;
+  @include border-top-radius(4px);
   vertical-align: text-bottom;
   min-height: auto;
 
@@ -24,4 +24,15 @@
 
 .modal-footer {
   border: none;
+}
+
+// Pop-Overs
+.popover {
+  max-width: none;
+}
+
+.popover-title {
+  background-color: $yellow-orange;
+  color: $white;
+  text-transform: uppercase;
 }
