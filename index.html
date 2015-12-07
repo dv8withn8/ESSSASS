@@ -2,32 +2,44 @@
 layout: default
 ---
 
+<!-- TYPOGRAPHY-->
 <article>
   <header>
     <a name="typography"></a>
     <h1>Typography</h1>
   </header>
   <div class="examples">
+      <h4>Headings</h4>
     	<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
     	<h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
     	<h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
     	<h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
 
+      <h4 class="addTop">Paragraphs</h4>
     	<p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
+
+    	<h4 class="addTop">Support Text</h4>
+    	<span class="txt-support">This is smaller support text, used to display supplementary info such displaying the author and last edit date of a note or the dimensions of a cardboard box in the shopping cart.</span>
   </div>
 
   <div class="snippets">
 {% highlight html %}
+//Headings
 <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
 <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
 <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
 <h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
 
+//Paragraph
 <p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
+
+//Support Text
+<span class="txt-support">This is smaller support text, used to display supplementary info such displaying the author and last edit date of a note or the dimensions of a cardboard box in the shopping cart.</span>
 {% endhighlight %}
   </div>
 </article>
 
+<!-- BUTTONS -->
 <article>
   <header>
     <a name="buttons"></a>
@@ -38,19 +50,21 @@ layout: default
     <button type="button" class="btn">Button</button>
     <button type="button" class="btn-secondary">Button</button>
     <button type="button" class="btn-special">Button</button>
+    <button type="button" class="btn-text">Button</button>
     <button type="button" disabled="disabled">Button</button>
 
   <hr/>
 
-    <h4>Small Buttons</h4>
+    <h4 class="addTop">Small Buttons</h4>
     <button type="button" class="btn btn-small">Button</button>
     <button type="button" class="btn-secondary btn-small">Button</button>
     <button type="button" class="btn-special btn-small">Button</button>
+    <button type="button" class="btn-text btn-small">Button</button>
     <button type="button" class=" btn-small" disabled="disabled">Button</button>
 
   <hr/>
 
-    <h4>Button Groups</h4>
+    <h4 class="addTop">Button Groups</h4>
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn">Left</button>
       <button type="button" class="btn">Middle</button>
@@ -71,12 +85,14 @@ layout: default
 <button type="button" class="btn">Button</button>
 <button type="button" class="btn-secondary">Button</button>
 <button type="button" class="btn-special">Button</button>
+<button type="button" class="btn-text">Button</button>
 <button type="button" disabled="disabled">Button</button>
 
 // Small Buttons
 <button type="button" class="btn btn-small">Button</button>
 <button type="button" class="btn-secondary btn-small">Button</button>
 <button type="button" class="btn-special btn-small">Button</button>
+<button type="button" class="btn-text btn-small">Button</button>
 <button type="button" class=" btn-small" disabled="disabled">Button</button>
 
 // Button Group
@@ -96,6 +112,62 @@ layout: default
   </div>
 </article>
 
+<!-- BADGES -->
+<article>
+  <header>
+    <a name="badges"></a>
+    <h1>Badges</h1>
+  </header>
+  <div class="examples">
+    <h3>Joffery Borathean <span class="badge status-active">actv</span> <span class="badge status-needsAttention">lead</span></h3>
+
+    <br/>
+
+    <span class="badge status-needsAttention">lead</span>
+    <span class="badge status-inProgress">appt</span>
+    <span class="badge status-ready">movn</span>
+    <span class="badge status-active">actv</span>
+    <span class="badge status-warning">clsd</span>
+    <span class="badge status-inactive">lost</span>
+  </div>
+
+  <div class="snippets">
+{% highlight html %}
+<h3>Joffery Borathean <span class="badge status-active">actv</span> <span class="badge status-needsAttention">lead</span></h3>
+
+<span class="badge status-needsAttention">lead</span>
+<span class="badge status-inProgress">appt</span>
+<span class="badge status-ready">movn</span>
+<span class="badge status-active">actv</span>
+<span class="badge status-warning">clsd</span>
+<span class="badge status-inactive">lost</span>
+{% endhighlight %}
+  </div>
+</article>
+
+<!-- ALERTS -->
+<article>
+  <header>
+    <a name="alerts"></a>
+    <h1>Alerts</h1>
+  </header>
+  <div class="examples">
+    <div class="alert alert-success" role="alert">Success</div>
+    <div class="alert alert-info" role="alert">Info</div>
+    <div class="alert alert-warning" role="alert">Warning</div>
+    <div class="alert alert-danger" role="alert">Danger</div>
+  </div>
+  <div class="snippets">
+{% highlight html %}
+<div class="alert alert-success" role="alert">Success</div>
+<div class="alert alert-info" role="alert">Info</div>
+<div class="alert alert-warning" role="alert">Warning</div>
+<div class="alert alert-danger" role="alert">Danger</div>
+{% endhighlight %}
+  </div>
+</article>
+
+<!-- FORMS -->
 <article>
   <header>
     <a name="forms"></a>
@@ -164,6 +236,7 @@ layout: default
   </div>
 </article>
 
+<!-- FORMS_Checks/Radios -->
 <article>
   <header>
     <a name="checks"></a>
@@ -242,6 +315,7 @@ layout: default
   </div>
 </article>
 
+<!-- FORMS_Inline Checks/Radios -->
 <article>
   <header>
     <a name="inline-checks"></a>
@@ -302,6 +376,7 @@ layout: default
   </div>
 </article>
 
+<!-- FORMS_Inline Fields -->
 <article>
   <header>
     <a name="inline-form"></a>
@@ -340,6 +415,7 @@ layout: default
   </div>
 </article>
 
+<!-- FORMS_Date Input -->
 <article>
   <header>
     <a name="date"></a>
@@ -373,6 +449,7 @@ layout: default
   </div>
 </article>
 
+<!-- Tables -->
 <article>
   <header>
     <a name="tables"></a>
@@ -467,28 +544,6 @@ layout: default
 </table>
 {% endhighlight %}
 </div>
-</article>
-
-<!-- ALERTS -->
-<article>
-  <header>
-    <a name="alerts"></a>
-    <h1>Alerts</h1>
-  </header>
-  <div class="examples">
-    <div class="alert alert-success" role="alert">Success</div>
-    <div class="alert alert-info" role="alert">Info</div>
-    <div class="alert alert-warning" role="alert">Warning</div>
-    <div class="alert alert-danger" role="alert">Danger</div>
-  </div>
-  <div class="snippets">
-{% highlight html %}
-<div class="alert alert-success" role="alert">Success</div>
-<div class="alert alert-info" role="alert">Info</div>
-<div class="alert alert-warning" role="alert">Warning</div>
-<div class="alert alert-danger" role="alert">Danger</div>
-{% endhighlight %}
-  </div>
 </article>
 
 <!-- ACCORDIONS -->
@@ -593,37 +648,6 @@ layout: default
   </div>
 </article>
 
-<!-- BADGES -->
-<article>
-  <header>
-    <a name="badges"></a>
-    <h1>Badges</h1>
-  </header>
-  <div class="examples">
-    <h3>Joffery Borathean <span class="badge status-active">actv</span> <span class="badge status-needsAttention">lead</span></h3>
-
-    <br/>
-
-    <span class="badge status-needsAttention">lead</span>
-    <span class="badge status-inProgress">appt</span>
-    <span class="badge status-ready">movn</span>
-    <span class="badge status-active">actv</span>
-    <span class="badge status-warning">clsd</span>
-    <span class="badge status-inactive">lost</span>
-  <div class="snippets">
-{% highlight html %}
-<h3>Joffery Borathean <span class="badge status-active">actv</span> <span class="badge status-needsAttention">lead</span></h3>
-
-<span class="badge status-needsAttention">lead</span>
-<span class="badge status-inProgress">appt</span>
-<span class="badge status-ready">movn</span>
-<span class="badge status-active">actv</span>
-<span class="badge status-warning">clsd</span>
-<span class="badge status-inactive">lost</span>
-{% endhighlight %}
-  </div>
-</article>
-
 <!-- TABS -->
 <article>
   <header>
@@ -701,6 +725,65 @@ layout: default
   </div>
 </article>
 
+<!-- MODALS -->
+<article>
+  <header>
+    <a name="modals"></a>
+    <h1>Modals</h1>
+  </header>
+  <div class="examples">
+    <!-- Button trigger modal -->
+    <button type="button" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">CLOSE <i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></button>
+            <h2 class="modal-title" id="myModalLabel">Modal <b>title</b></h2>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-text" data-dismiss="modal">Close</button>
+            <button type="button">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="snippets">
+{% highlight html %}
+<button type="button" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+// Modal Markup
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">CLOSE <i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></button>
+        <h2 class="modal-title" id="myModalLabel">Modal <b>title</b></h2>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-text" data-dismiss="modal">Close</button>
+        <button type="button">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</article>
+
 <!-- Entry Sample Placeholder -->
 <article>
   <header>
@@ -709,7 +792,6 @@ layout: default
   </header>
   <div class="examples">
 
-  </div>
   <div class="snippets">
 {% highlight html %}
 

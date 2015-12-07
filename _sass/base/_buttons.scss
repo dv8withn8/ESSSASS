@@ -101,7 +101,53 @@
     border-color: $bright-green;
 	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
 	  outline: none;
-	 }
+  }
+}
+
+.btn-text {
+  color: $es-blue;
+  background: none;
+  border: none;
+
+  &:hover,
+	&:focus {
+  	color: lighten($action-color, 15%);
+		background: none;
+		border: none;
+		outline: none;
+	}
+  &:active,
+  &:active:hover {
+    background: none;
+    border: none;
+	  box-shadow: none;
+	  outline: none;
+  }
+}
+
+button.close,
+.close,
+.btn-close {
+  font-size: $font-size-smaller;
+  color: $dark-grey;
+  background: none;
+  border: none;
+  text-shadow: none;
+  opacity: 1;
+
+  &:hover,
+	&:focus {
+		background: none;
+		border: none;
+		outline: none;
+	}
+  &:active,
+  &:active:hover {
+    background: none;
+    border: none;
+	  box-shadow: none;
+	  outline: none;
+  }
 }
 
 .btn-small {
