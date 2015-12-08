@@ -1,0 +1,30 @@
+/* Dropdowns : Breeze
+ *
+ * Overrides of Bootstrap defaults
+ *
+ */
+
+
+.dropdown-menu {
+  border-color: $med-grey;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+}
+
+.dropdown-menu .divider {
+  background-color: $grey;
+}
+
+.dropdown-menu > li > a {
+  line-height: inherit;
+  padding: $base-spacing;
+  transition: all $base-duration $base-timing;
+
+  &:hover {
+    background-color: $es-blue;
+    color: $white;
+  }
+}
+
+.dropdown i {
+  margin-left: $small-spacing;
+}
