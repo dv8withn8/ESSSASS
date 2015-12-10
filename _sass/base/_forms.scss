@@ -1,5 +1,4 @@
 fieldset {
-  background-color: $secondary-background-color;
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
@@ -19,6 +18,7 @@ label {
   margin-bottom: 0;
   text-transform: uppercase;
   color: $dark-grey;
+
   &.required::after {
     content: "*";
   }
@@ -67,8 +67,10 @@ select[multiple=multiple] {
   }
 }
 
-select.form-control {
-  height: 37px; // Requires explicit height as <select> will not apply padding
+// Setting an explicit height as a quick work-around of inconsistencies with these elements
+select.form-control,
+input[type=date] {
+  height: 37px;
 }
 
 textarea {
@@ -103,7 +105,6 @@ input[type="file"] {
     font-size: modular-scale(0);
   }
 }
-
 
 // Input Group Overrides
 .input-group-addon {
@@ -150,3 +151,139 @@ input[type="file"] {
   }
 */
 }
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; // space out consecutive inline controls
+}
+
+// Apply same disabled cursor tweak as for inputs
+// Some special care is needed because <label>s don't inherit their parent's `cursor`.
+//
+// Note: Neither radios nor checkboxes can be readonly.
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+// These classes are used directly on <label>s
+.radio-inline,
+.checkbox-inline {
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+// These classes are used on elements with <label> descendants
+.radio,
+.checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+// Inline forms (Pulled directly from Bootstrap)
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+
+// [converter] extracted from `.form-inline` for libsass compatibility
+@mixin form-inline {
+
+  // Kick in the inline
+  @media (min-width: $screen-sm-min) {
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      vertical-align: middle;
+    }
+
+    // Make static controls behave like regular ones
+    .form-control-static {
+      display: inline-block;
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    // Input groups need that 100% width though
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match.
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+
+    // Re-override the feedback icon.
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+  }
+}
+// [converter] extracted as `@mixin form-inline` for libsass compatibility
+.form-inline {
+  @include form-inline;
+}
+
+
