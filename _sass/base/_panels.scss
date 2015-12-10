@@ -254,10 +254,10 @@
 .panel-title i {
   margin-right: $base-spacing;
 }
-.panel-title a.collapsed .fa-caret-right {
+.panel-title a.collapsed .es-caret-right {
   transform: rotate(0deg);
 }
-.panel-title a .fa-caret-right {
+.panel-title a .es-caret-right {
   transform: rotate(90deg);
 }
 
