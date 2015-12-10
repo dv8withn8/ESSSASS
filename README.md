@@ -29,12 +29,5 @@ Use Bootstrap elements referenced straight from [their docs](http://getbootstrap
 
 A SASS mixin library to make life easier.
 
-
-### Font Awesome
-[https://github.com/FortAwesome/font-awesome-sass]
-
-This is our icon library and here is a [handy reference](http://fortawesome.github.io/Font-Awesome/cheatsheet/).
-
 ## HELP!
 Please reach out to Nathan at Slalom if you have questions about this library or general HTML/CSS issues via Email/Hipchat nathan.peters@slalom.com.
-
