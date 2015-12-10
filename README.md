@@ -1,7 +1,7 @@
 ```
 Note
 
-This is still a WIP! Some stylings are incomplete or missing.
+This is a baseline that establishes styling standards and normalization. It is not intended as the final word. Expand upon it and if you think a base style needs to be changed, raise the issue in HipChat!
 
 ```
 
