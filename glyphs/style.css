@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ES-Breeze';
-	src:url('fonts/ES-Breeze.eot?fh28ux');
-	src:url('fonts/ES-Breeze.eot?fh28ux#iefix') format('embedded-opentype'),
-		url('fonts/ES-Breeze.ttf?fh28ux') format('truetype'),
-		url('fonts/ES-Breeze.woff?fh28ux') format('woff'),
-		url('fonts/ES-Breeze.svg?fh28ux#ES-Breeze') format('svg');
+	src:url('fonts/ES-Breeze.eot?d3kp20');
+	src:url('fonts/ES-Breeze.eot?d3kp20#iefix') format('embedded-opentype'),
+		url('fonts/ES-Breeze.ttf?d3kp20') format('truetype'),
+		url('fonts/ES-Breeze.woff?d3kp20') format('woff'),
+		url('fonts/ES-Breeze.svg?d3kp20#ES-Breeze') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -714,7 +714,7 @@ i {
 .es-arrow-circle-right:before {
 	content: "\f18e";
 }
-.es-arroe-circle-left:before {
+.es-arrow-circle-left:before {
 	content: "\f190";
 }
 .es-caret-square-left:before {
@@ -741,22 +741,22 @@ i {
 .es-database:before {
 	content: "\f1c0";
 }
-.es-pdf:before {
+.es-file-pdf:before {
 	content: "\f1c1";
 }
-.es-word:before {
+.es-file-word:before {
 	content: "\f1c2";
 }
-.es-excel:before {
+.es-file-excel:before {
 	content: "\f1c3";
 }
-.es-powepoint:before {
+.es-file-powerpoint:before {
 	content: "\f1c4";
 }
-.es-image:before {
+.es-file-image:before {
 	content: "\f1c5";
 }
-.es-zipped:before {
+.es-file-zipped:before {
 	content: "\f1c6";
 }
 .es-reverse-time:before {

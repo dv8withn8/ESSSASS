@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'ES-Breeze';
-	src:url('fonts/ES-Breeze.eot?fh28ux');
-	src:url('fonts/ES-Breeze.eot?fh28ux#iefix') format('embedded-opentype'),
-		url('fonts/ES-Breeze.ttf?fh28ux') format('truetype'),
-		url('fonts/ES-Breeze.woff?fh28ux') format('woff'),
-		url('fonts/ES-Breeze.svg?fh28ux#ES-Breeze') format('svg');
+	src:url('fonts/ES-Breeze.eot?d3kp20');
+	src:url('fonts/ES-Breeze.eot?d3kp20#iefix') format('embedded-opentype'),
+		url('fonts/ES-Breeze.ttf?d3kp20') format('truetype'),
+		url('fonts/ES-Breeze.woff?d3kp20') format('woff'),
+		url('fonts/ES-Breeze.svg?d3kp20#ES-Breeze') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1176,9 +1176,9 @@ i {
 		content: $es-arrow-circle-right;
 	}
 }
-.es-arroe-circle-left {
+.es-arrow-circle-left {
 	&:before {
-		content: $es-arroe-circle-left;
+		content: $es-arrow-circle-left;
 	}
 }
 .es-caret-square-left {
@@ -1221,34 +1221,34 @@ i {
 		content: $es-database;
 	}
 }
-.es-pdf {
+.es-file-pdf {
 	&:before {
-		content: $es-pdf;
+		content: $es-file-pdf;
 	}
 }
-.es-word {
+.es-file-word {
 	&:before {
-		content: $es-word;
+		content: $es-file-word;
 	}
 }
-.es-excel {
+.es-file-excel {
 	&:before {
-		content: $es-excel;
+		content: $es-file-excel;
 	}
 }
-.es-powepoint {
+.es-file-powerpoint {
 	&:before {
-		content: $es-powepoint;
+		content: $es-file-powerpoint;
 	}
 }
-.es-image {
+.es-file-image {
 	&:before {
-		content: $es-image;
+		content: $es-file-image;
 	}
 }
-.es-zipped {
+.es-file-zipped {
 	&:before {
-		content: $es-zipped;
+		content: $es-file-zipped;
 	}
 }
 .es-reverse-time {

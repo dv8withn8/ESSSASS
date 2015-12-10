@@ -5424,7 +5424,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61840,
-				"name": "arroe-circle-left"
+				"name": "arrow-circle-left"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5635,7 +5635,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61889,
-				"name": "pdf"
+				"name": "file-pdf"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5658,7 +5658,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61890,
-				"name": "word"
+				"name": "file-word"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5681,7 +5681,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61891,
-				"name": "excel"
+				"name": "file-excel"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5704,7 +5704,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61892,
-				"name": "powepoint"
+				"name": "file-powerpoint"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5727,7 +5727,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61893,
-				"name": "image"
+				"name": "file-image"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -5750,7 +5750,7 @@
 				"ligatures": "",
 				"prevSize": 32,
 				"code": 61894,
-				"name": "zipped"
+				"name": "file-zipped"
 			},
 			"setIdx": 1,
 			"setId": 1,
@@ -6866,8 +6866,9 @@
 	"metadata": {
 		"name": "ES-Breeze",
 		"url": "http://www.extraspace.com",
-		"designer": "Nathan Peters",
-		"designerURL": "http://dv8withn8.github.io"
+		"designer": "Nathan Peters / Dave Gandy(Font Awesome)",
+		"license": "SIL OFL 1.1",
+		"licenseURL": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL"
 	},
 	"preferences": {
 		"showGlyphs": true,
@@ -6881,10 +6882,11 @@
 				"majorVersion": 1,
 				"minorVersion": 0,
 				"description": "Custom Icons for ExtraSpace Breeze",
-				"designer": "Nathan Peters",
-				"designerURL": "http://dv8withn8.github.io",
+				"designer": "Nathan Peters / Dave Gandy(Font Awesome)",
 				"fontURL": "http://www.extraspace.com",
-				"copyright": "2015"
+				"copyright": "2015",
+				"licenseURL": "http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL",
+				"license": "SIL OFL 1.1"
 			},
 			"metrics": {
 				"emSize": 1024,
