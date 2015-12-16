@@ -1,0 +1,88 @@
+body {
+  background-color: $bg-grey;
+}
+
+.context {
+  @include padding($base-spacing $base-spacing $large-spacing * 3);
+  margin-bottom: -2.25em;
+  background-color: $body-grey;
+  color: $white;
+
+  header {
+    margin-bottom: $base-spacing * 2;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+.context .wrapper {
+  width: calc(100vw - 320px);
+}
+
+.context-data label {
+    color: $bg-grey;
+}
+
+.context .columns {
+  -webkit-columns: 3em 3;
+  -moz-columns: 3em 3;
+  columns: 3em 3;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+
+  li {
+    margin-bottom: $base-spacing;
+  }
+}
+
+#contentContainer {
+  margin-left: $base-spacing;
+  width: calc(100vw - 320px);
+}
+
+#slidingPanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: $white;
+  border-color: $med-grey;
+  border-style:  solid;
+  @include border-width(0 0 0 1px);
+  box-shadow: -4px 0 6px rgba(0,0,0,.12)
+}
+
+.container {
+  background-color: $white;
+  border: 1px solid $med-grey;
+}
+
+section {
+  margin-bottom: $large-spacing;
+}
+
+
+//Doesn't belong here but dropping in for demo expediency
+.status {
+  padding: $small-spacing;
+  font-size: $font-size-large;
+  font-weight: 700;
+  border-radius: $base-border-radius;
+
+  &.status--green {
+    background-color: $es-green;
+    color: $white;
+  }
+}
+
+.meta {
+  margin: 0;
+  color: $bg-grey;
+  font-size: $font-size-small;
+}
+

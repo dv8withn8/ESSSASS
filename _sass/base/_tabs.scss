@@ -12,6 +12,44 @@
   background: $bg-grey;
   border: 1px solid $med-grey;
   border-radius: 0;
+  text-transform: uppercase;
+  padding: $base-spacing $large-spacing;
+  font-size: $font-size-small;
+
+  &.dropdown-toggle {
+    background: $es-blue;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($action-color, 15%);
+      color: #fff;
+      border-color: $light-blue;
+      outline: none;
+    }
+
+    &:active,
+    &:active:hover {
+      background-color: lighten($action-color, 15%);
+      border-color: $light-blue;
+  	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+  	  outline: none;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: $med-grey;
+      border-color: $grey;
+      color: $grey;
+    }
+
+    &.is-active {
+      background-color: lighten($action-color, 15%);
+      border-color: $light-blue;
+  	  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+  	  outline: none;
+    }
+  }
 }
 
 .nav-tabs > li:first-child > a {
@@ -51,4 +89,5 @@
   border: 1px solid $med-grey;
   border-radius: $base-border-radius;
   border-top-left-radius: 0;
+  background-color: $white;
 }
