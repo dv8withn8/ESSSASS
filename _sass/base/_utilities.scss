@@ -79,3 +79,17 @@
     background-color: $status-inactive;
   }
 }
+
+
+// Unit/Account Status Style
+.status {
+  padding: $small-spacing;
+  font-size: $font-size-large;
+  font-weight: 700;
+  border-radius: $base-border-radius;
+
+  &.status--green {
+    background-color: $es-green;
+    color: $white;
+  }
+}

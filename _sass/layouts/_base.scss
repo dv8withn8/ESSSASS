@@ -65,24 +65,3 @@ body {
 section {
   margin-bottom: $large-spacing;
 }
-
-
-//Doesn't belong here but dropping in for demo expediency
-.status {
-  padding: $small-spacing;
-  font-size: $font-size-large;
-  font-weight: 700;
-  border-radius: $base-border-radius;
-
-  &.status--green {
-    background-color: $es-green;
-    color: $white;
-  }
-}
-
-.meta {
-  margin: 0;
-  color: $bg-grey;
-  font-size: $font-size-small;
-}
-
