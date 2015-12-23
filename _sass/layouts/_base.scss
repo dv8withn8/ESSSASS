@@ -5,7 +5,7 @@ body {
 .context {
   @include padding($base-spacing $base-spacing $large-spacing * 3);
   margin-bottom: -2.25em;
-  background-color: $dark-grey;
+  background-color: $body-grey;
   color: $white;
 
   header {
@@ -19,7 +19,7 @@ body {
 }
 
 .context .wrapper {
-  width: calc(100vw - 345px);
+  width: calc(100vw - 365px);
 }
 
 .context-data label {
@@ -41,7 +41,7 @@ body {
 
 #contentContainer {
   margin-left: $base-spacing;
-  width: calc(100vw - 345px);
+  width: calc(100vw - 365px);
 }
 
 #slidingPanel {
