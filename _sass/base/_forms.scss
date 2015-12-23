@@ -113,13 +113,15 @@ input[type="file"] {
 }
 
 // input[type=date]
-.input-date {
+/*.input-date {
   .input-group-addon {
     background-color: $es-blue;
     color: #fff;
   }
-}
+}*/
 
+
+// Error States
 .has-error {
   label {
     color: $red;

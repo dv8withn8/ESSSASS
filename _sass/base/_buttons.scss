@@ -79,6 +79,26 @@
   }
 }
 
+.btn-secondary--inverse {
+	background-color: transparent;
+	color: $white;
+	border-color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: $white;
+		color: $es-blue;
+		border-color: $es-blue;
+		outline: none;
+	}
+	&:active,
+  &:active:hover {
+    background-color: $white;
+		color: $es-blue
+  }
+}
+
+
 .btn-special {
   background-color: $es-green;
   border-color: $bright-green;
@@ -153,4 +173,9 @@ button.close,
 .btn-small {
   font-size: $font-size-smaller;
   padding: $small-spacing $base-spacing;
+}
+
+.btn-fullWidth {
+  display: block;
+  width: 100%;
 }

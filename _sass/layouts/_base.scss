@@ -5,7 +5,7 @@ body {
 .context {
   @include padding($base-spacing $base-spacing $large-spacing * 3);
   margin-bottom: -2.25em;
-  background-color: $body-grey;
+  background-color: $dark-grey;
   color: $white;
 
   header {
@@ -19,7 +19,7 @@ body {
 }
 
 .context .wrapper {
-  width: calc(100vw - 320px);
+  width: calc(100vw - 345px);
 }
 
 .context-data label {
@@ -41,20 +41,146 @@ body {
 
 #contentContainer {
   margin-left: $base-spacing;
-  width: calc(100vw - 320px);
+  width: calc(100vw - 345px);
 }
 
 #slidingPanel {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
-  width: 300px;
+  right: -320px;
+  width: 640px;
   height: 100%;
   background-color: $white;
   border-color: $med-grey;
   border-style:  solid;
   @include border-width(0 0 0 1px);
-  box-shadow: -4px 0 6px rgba(0,0,0,.12)
+  box-shadow: -4px 0 6px rgba(0,0,0,.12);
+  overflow: hidden;
+  z-index: 10;
+  @include transition(all .5s ease-in-out);
+
+  > section {
+    height: 100%;
+  }
+
+}
+
+.cart,
+.payment {
+  position: absolute;
+  top: 0;
+  padding-bottom: 8em;
+  width: 320px;
+  height: 100%;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+      width: 0;
+  }
+
+  > div:not(:first-child) {
+    border-top: 1px solid
+  }
+
+  .panel {
+    border: none;
+  }
+}
+
+.cart {
+  left: 0;
+  border-right: 1px solid $med-grey;
+}
+
+.cart2 {
+  padding-bottom: 0;
+}
+
+.cart .panel-heading {
+  padding: 0;
+  border-bottom: none;
+
+  i {
+    float: right;
+  }
+}
+
+.cart .panel-heading a {
+  padding: $large-spacing $base-spacing;
+
+  &:hover {
+    background-color: $ghost-grey;
+    text-decoration: none;
+  }
+}
+
+.cart .panel-group {
+  margin-bottom: 0;
+}
+
+.cart .panel-body {
+  border-bottom: none;
+}
+
+.cart-header {
+  border-bottom: 4px solid $dark-grey;
+  border-right: 1px solid $med-grey;
+  padding: $base-spacing;
+  background-color: $ghost-grey;
+
+  h2 {
+    display: inline-block;
+    margin: $base-spacing 0;
+    font-weight: 700;
+    i {
+      margin-right: $small-spacing;
+    }
+  }
+
+  .cancel {
+    color: $red;
+    float: right;
+    margin: 0.75em 0;
+  }
+}
+
+.cart-rental {
+
+}
+
+.cart-retail {
+
+}
+
+.cart-summary {
+  position: fixed;
+  bottom: 0;
+  width: 320px;
+  padding: $large-spacing $base-spacing;
+  background-color: $es-blue;
+  color: $white;
+
+  > .inner {
+    position: relative;
+  }
+}
+
+.cart-summary-2 {
+  padding: $large-spacing $base-spacing;
+  background-color: $es-blue;
+  color: $white;
+
+  > .inner {
+    position: relative;
+  }
+}
+
+.payment {
+  right: 0;
+
+  > div:not(:first-child) {
+    padding: $large-spacing $base-spacing;
+  }
 }
 
 .container {
@@ -64,4 +190,41 @@ body {
 
 section {
   margin-bottom: $large-spacing;
+}
+
+div[class$="overlay"] {
+  display: none;
+}
+
+// Payment Pane Modifiers
+
+body.payment-active {
+  position: fixed;
+  top: 0;
+
+  .page-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    @include transition(all .5s ease-in);
+    z-index: 5;
+  }
+  .cart-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.12);
+    @include transition(all .5s ease-in);
+    z-index: 15;
+
+  }
+
+  #slidingPanel {
+    right: 0;
+  }
 }
