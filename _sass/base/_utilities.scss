@@ -80,6 +80,18 @@
   }
 }
 
+// Tooltip Overrides
+i[data-toggle="tooltip"] {
+  color: $es-blue;
+}
+
+.tooltip {
+
+  .tooltip-inner {
+    padding: $small-spacing $base-spacing;
+    font-family: $base-font-family;
+  }
+}
 
 // Unit/Account Status Style
 .status {
