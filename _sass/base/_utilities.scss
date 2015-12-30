@@ -90,6 +90,8 @@ i[data-toggle="tooltip"] {
   .tooltip-inner {
     padding: $small-spacing $base-spacing;
     font-family: $base-font-family;
+    font-size: $font-size-large;
+    box-shadow: 0px 4px 6px rgba(0,0,0,.4);
   }
 }
 
