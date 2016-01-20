@@ -58,7 +58,7 @@ select[multiple=multiple] {
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: shade($base-background-color, 40%);
     cursor: not-allowed;
 
     &:hover {
@@ -131,9 +131,9 @@ input[type="file"] {
 .has-error .form-control {
   color: $red;
   border-color: $red;
-  background-color: tint($red, 85%);
 
-  &:focus {
+  &:focus,
+  &:hover {
     box-shadow: none;
     border-color: $red;
   }
@@ -217,11 +217,11 @@ input[type="checkbox"] {
 @mixin form-inline {
 
   // Kick in the inline
-  @media (min-width: $screen-sm-min) {
     // Inline-block all the things for "inline"
-    .form-group {
+    .form-group,
+    .btn {
       display: inline-block;
-      margin-bottom: 0;
+      margin-bottom: $base-spacing;
       vertical-align: middle;
     }
 
@@ -245,6 +245,7 @@ input[type="checkbox"] {
       .input-group-btn,
       .form-control {
         width: auto;
+        font-size: inherit;
       }
     }
 
@@ -281,7 +282,6 @@ input[type="checkbox"] {
     .has-feedback .form-control-feedback {
       top: 0;
     }
-  }
 }
 // [converter] extracted as `@mixin form-inline` for libsass compatibility
 .form-inline {

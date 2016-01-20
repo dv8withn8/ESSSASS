@@ -226,6 +226,11 @@ layout: default
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <div class="form-group">
+        <label for="exampleDisabled">Disabled Field</label>
+        <input type="text" class="form-control" id="exampleDisabled" disabled="disabled" placeholder="Disabled">
+      </div>
+
+      <div class="form-group">
         <select class="form-control">
           <option>1</option>
           <option>2</option>
@@ -465,7 +470,8 @@ layout: default
     <h1>Date Input</h1>
   </header>
   <div class="examples">
-    <div class="form-group">
+    <div class="form-inline">
+      <div class="form-group">
       <label for="exampleDate1">Date</label>
       <div class="input-group input-date">
         <input type="date" class="form-control" id="exampleDate1">
@@ -474,6 +480,21 @@ layout: default
         </div>
       </div>
     </div>
+    </div>
+
+    <div class="form-inline">
+      <div class="form-group">
+      <label for="exampleDate1">Date</label>
+        <div class="input-group input-date">
+          <input type="date" class="form-control" id="exampleDate1">
+          <div class="input-group-btn">
+            <button class="btn" type="button">
+              <i class="es-calendar"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+    </div>
   </div>
   <div class="snippets">
 {% highlight html %}
@@ -481,11 +502,11 @@ layout: default
   <label for="exampleDate1">Date</label>
   <div class="input-group input-date">
     <input type="date" class="form-control" id="exampleDate1">
-    <div class="input-group-btn">
+    <span class="input-group-btn">
       <button class="btn" type="button">
         <i class="es-calendar"></i>
       </button>
-    </div>
+    </span>
   </div>
 </div>
 {% endhighlight %}
