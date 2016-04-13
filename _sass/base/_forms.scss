@@ -18,6 +18,7 @@ label {
   margin-bottom: 0;
   text-transform: uppercase;
   color: $dark-grey;
+  line-height: 2;
 
   &.required::after {
     content: "*";
@@ -29,7 +30,6 @@ label {
 }
 
 #{$all-text-inputs},
-.form-control, //Bootstrap class override
 select[multiple=multiple] {
   color: $body-grey;
   background-color: $ghost-grey;
@@ -97,6 +97,9 @@ input[type="file"] {
 }
 
 // Form Classes
+.form-group {
+  margin-bottom: $base-spacing;
+}
 .checkbox,
 .radio {
   label {
@@ -132,7 +135,6 @@ input[type="file"] {
   color: $red;
   border-color: $red;
 
-  &:focus,
   &:hover {
     box-shadow: none;
     border-color: $red;
@@ -142,7 +144,7 @@ input[type="file"] {
 .has-error .help-block {
   color: $red;
   font-size: $font-size-smaller;
-  margin-top: none;
+  margin-top: 0;
   padding-left: .5em;
   border-left: 2px solid $red;
 /*

@@ -2,6 +2,26 @@ body {
   background-color: $bg-grey;
 }
 
+.container {
+  background-color: $white;
+  border: 1px solid $med-grey;
+}
+
+article.ex {
+  margin-top: 0;
+  margin-bottom: $large-spacing;
+  padding: 0;
+  border: none;
+}
+
+section {
+  margin-bottom: $base-spacing;
+}
+
+div[class$="overlay"] {
+  display: none;
+}
+
 .context {
   @include padding($base-spacing $base-spacing $large-spacing * 3);
   margin-bottom: -2.25em;
@@ -43,6 +63,35 @@ body {
   margin-left: $base-spacing;
   width: calc(100vw - 365px);
 }
+
+// With Flexbox
+.oppContact-details {
+  @include align-items(flex-start);
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
+
+  li {
+    @include flex(1);
+    margin-bottom: $large-spacing;
+  }
+
+  li:first-child,
+  li:last-child {
+    @include flex-basis(100%);
+  }
+}
+
+// With BS Grid
+.oppContact-details2 {
+
+  li {
+    margin-bottom: $large-spacing;
+  }
+}
+
+// Cart Styles
 
 #slidingPanel {
   position: fixed;
@@ -181,19 +230,6 @@ body {
   > div:not(:first-child) {
     padding: $large-spacing $base-spacing;
   }
-}
-
-.container {
-  background-color: $white;
-  border: 1px solid $med-grey;
-}
-
-section {
-  margin-bottom: $large-spacing;
-}
-
-div[class$="overlay"] {
-  display: none;
 }
 
 // Payment Pane Modifiers

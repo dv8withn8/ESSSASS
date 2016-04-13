@@ -2,11 +2,14 @@
 layout: example
 ---
 
-<section class="relations">
+<article class="ex oppContacts">
   <div class="panel-group" id="relations-tabs" role="tablist" aria-multiselectable="true">
     <ul class="nav nav-tabs">
       <li class="active">
-        <a data-toggle="tab" href="#related-accounts">Related Accounts</a>
+        <a data-toggle="tab" href="#oppContact-primary">Primary Contact</a>
+      </li>
+      <li>
+        <a data-toggle="tab" href="#oppContact-alts">Alternate Contacts</a>
       </li>
       <li class="dropdown">
           <a data-toggle="dropdown" class="dropdown-toggle" href="#">Actions <i class="caret"></i></a>
@@ -17,14 +20,62 @@ layout: example
       </li>
     </ul>
     <div class="tab-content">
-      <div id="related-accounts" class="tab-pane fade in active">
-          <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-      </div>
+
+      <section id="oppContact-primary" class="tab-pane fade in active">
+        <!-- Flexbox Markup -->
+        <ul class="oppContact-details">
+          <li>
+            <h6>Contact Name</h6>
+            Bob Barker
+          </li>
+          <li>
+            <h6>Primary Phone</h6>
+            (555) 555-5555
+          </li>
+          <li>
+            <h6>Primary Email</h6>
+            bob@thepriceisright.com
+          </li>
+          <li>
+            <h6>Address</h6>
+            1234 Sesame St., Las Vegas, NV 68456
+          </li>
+        </ul>
+      </section>
+
+      <section id="oppContact-alts" class="tab-pane fade">
+        <!-- Bootstrap Grid -->
+        <ul class="oppContact-details2">
+          <div class="row">
+            <li class="col-md-12">
+              <h6>Contact Name</h6>
+              Drew Carrey
+            </li>
+          </div>
+          <div class="row">
+            <li class="col-md-6">
+              <h6>Primary Phone</h6>
+              (555) 555-1234
+            </li>
+            <li class="col-md-6">
+              <h6>Primary Email</h6>
+              drew@thepriceisright.com
+            </li>
+          </div>
+          <div class="row">
+            <li class="col-md-12">
+              <h6>Address</h6>
+              1234 Sesame St., Las Vegas, NV 68456
+            </li>
+          </div>
+        </ul>
+      </section>
+
     </div>
   </div>
-</section>
+</article>
 
-<section class="categories">
+<article class="ex categories">
   <div class="panel-group" id="categories-tabs" role="tablist" aria-multiselectable="true">
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#sectionA">Section A</a></li>
@@ -51,32 +102,9 @@ layout: example
       </div>
     </div>
   </div>
-</section>
+</article>
 
-<section>
-<p style="text-align: left;">&nbsp; &nbsp;<strong>&nbsp; &nbsp;</strong>She&nbsp;was reading her little lord a tale of the Winged Knight when Mya Stone came knocking on the door of his bedchamber, clad in boots and riding leathers and smelling strongly of the stable. Mya had straw in her hair and a scowl on her face. <span style="text-decoration: underline;">That scowl comes of having Mychel Redfort near, Alayne knew.</span></p>
-<p style="text-align: left;">&nbsp; &nbsp; “Your lordship,” Mya informed Lord Robert, “Lady Waynwood’s banners have been seen an hour down the road. She will be here soon, with your cousin Harry. Will you want to greet them?”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;<span style="text-decoration: underline;">Why did she have to mention Harry?</span> Alayne thought. <span style="text-decoration: underline;">We will never get Sweetrobin out of bed now.</span> The boy slapped a pillow. “Send them away. I never asked them here.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Mya looked nonplussed. No one in the Vale was better at handling a mule, but lordlings were another matter. “They were invited,” she said uncertainly, “for the tourney. I don’t… “</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Alayne closed her book. &nbsp;“Thank you, Mya. Let me talk with&nbsp;Lord Robert, if you would.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Relief plain on her face, Mya fled without another word.</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“I hate that Harry,” Sweetrobin said when she was gone. “He calls me cousin, but he’s just waiting for me to die so he can take the Eyrie. He thinks I don’t know, but I do.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“Your lordship should not believe such nonsense,” Alayne said. “I’m sure Ser Harrold loves you well.” <span style="text-decoration: underline;">And if the gods are good, he will love me too.</span> Her tummy gave a little flutter.</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“He doesn’t,” Lord Robert insisted. “He wants my father’s castle, that’s all, so he pretends.” The boy clutched the blanket to his pimply chest. “I don’t want you to marry him, Alayne. I am the Lord of the Eyrie, and I forbid it.” He sounded as if he were about to cry. “You should marry me instead. We could sleep in the same bed every night, and you could read me stories.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;<span style="text-decoration: underline;">No man can wed me so long as my dwarf husband<i> </i>still lives somewhere in this world.</span> Queen Cersei had collected the head of a dozen dwarfs, Petyr claimed, but none were Tyrion’s. “Sweetrobin, you must not say such things. You are the Lord of the Eyrie and Defender of the Vale, and you must wed a highborn lady and father a son to sit in the High Hall of House Arryn after you are gone.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Robert wiped his nose. “But I want — “</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;She put a finger to his lips. “I know what you want, but it cannot be. I am no fit wife for you. I am bastard born.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“I don’t care. I love you best of anyone. “</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;<span style="text-decoration: underline;">You are such a little fool.</span>&nbsp; “Your lords bannermen will care. Some call my father upjumped and ambitious. If you were to take me to wife, they would say that he made you do it, that it was no will of yours. The Lords Declarant might take arms against him once again, and he and I should both be put to death.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“I wouldn’t let them hurt you!” Lord Robert said. “If they try I will make them all fly.” His hand began to tremble.</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Alayne stroked his fingers. “There, my Sweetrobin, be still now.” When the shaking passed, she said, “You must have a proper wife, a trueborn maid of noble birth.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“No. I want to marry you, Alayne.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;<span style="text-decoration: underline;">Once your lady mother intended that very thing, but I was trueborn then, and noble.</span> “My lord is kind to say so.” Alayne smoothed his hair. Lady Lysa had never let the servants touch it, and after she had died Robert had suffered terrible shaking fits whenever anyone came near him with a blade, so it had been allowed to grow until it tumbled over his round shoulders and halfway down his flabby white chest. <span style="text-decoration: underline;">He does have pretty hair.&nbsp; If the gods are good and he lives long enough to wed, his wife will admire his hair, surely.&nbsp; That much she will love about him.</span> “Any child of ours would be baseborn. Only a trueborn child of House Arryn can displace Ser Harrold as your heir. My father will find a proper wife for you, some highborn girl much prettier than me. You’ll hunt and hawk together, and she’ll give you her favor to wear in tournaments. Before long, you will have forgotten me entirely.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“I won’t!”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“You will. You must.” Her voice was firm, but gentle.</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;“The Lord of the Eyrie can do as he likes. Can’t I still love you, even if I have to marry her? Ser Harrold has a common woman. Benjicot says she’s carrying his bastard.”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;<span style="text-decoration: underline;">Benjicot should learn to keep his fool’s mouth shut.</span> “Is that what you would have from me? A bastard?” She pulled her fingers from his grasp. “Would you dishonor me that way?”</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;The boy looked stricken. “No. I never meant — “</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp;Alayne stood. “If it please my lord, I must go and find my father. Someone needs to greet Lady Waynwood.” Before her little lord could find the words to protest, she gave him a quick curtsy and fled the bedchamber, sweeping down the hall and across a covered bridge to the Lord Protector’s apartments.</p>
+<article>
 
-</section>
+
+</article>

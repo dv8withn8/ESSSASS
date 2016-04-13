@@ -51,6 +51,14 @@ h4 {
 	margin-bottom: $h4-margin-bottom;
 }
 
+h6 {
+	font-size: $font-size-smaller;
+	font-weight: 400;
+	line-height: $line-height-base;
+	margin: 0;
+	text-transform: uppercase;
+}
+
 p {
 	font-size: $font-size-base;
 	margin: 0 0 $base-spacing;
