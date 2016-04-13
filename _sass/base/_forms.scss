@@ -32,7 +32,7 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple] {
   color: $body-grey;
-  background-color: $ghost-grey;
+  background-color: #fff;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
@@ -58,7 +58,7 @@ select[multiple=multiple] {
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 40%);
+    background-color: $bg-grey;
     cursor: not-allowed;
 
     &:hover {
