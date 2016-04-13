@@ -56,10 +56,10 @@
   @include alert-variant(tint($es-blue, 85%), $es-blue, $es-blue);
 }
 
-.alert-warning {
+.alert-default {
   @include alert-variant(tint($orange, 85%), $orange, $orange);
 }
 
-.alert-danger {
+.alert-warning {
   @include alert-variant(tint($red, 85%), $red, $red);
 }
