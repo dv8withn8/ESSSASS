@@ -2,16 +2,19 @@
 <html>
   {% include head.html %}
   <body>
-    <div id="viewHeader">
-      {% include context-example.html %}
-    </div>
+    <div id="viewContainer">
+      <div id="contentContainer">
+        <div id="viewHeader">
+         {% include context-example.html %}
+        </div>
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </div>
 
-    <div id="contentContainer">
-      {{ content }}
-    </div>
-
-    <div id="slidingPanel">
-      {% include cart.html %}
+      <div id="slidingPanel">
+        {% include cart.html %}
+      </div>
     </div>
 
     <div class="page-overlay"></div>

@@ -23,7 +23,7 @@ div[class$="overlay"] {
 }
 
 .context {
-  @include padding($base-spacing $base-spacing $large-spacing * 3);
+  @include padding($base-spacing 0 $large-spacing * 3);
   margin-bottom: -2.25em;
   background-color: $body-grey;
   color: $white;
@@ -59,9 +59,34 @@ div[class$="overlay"] {
   }
 }
 
+#viewContainer {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+.wrapper {
+  margin: 0 1em;
+}
+#contentContainer,
+#slidingPanel {
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+#contentContainer::-webkit-scrollbar,
+#slidingPanel::-webkit-scrollbar {
+  display: none;
+}
+
 #contentContainer {
-  margin-left: $base-spacing;
-  width: calc(100vw - 365px);
+  flex: 1;
 }
 
 // With Flexbox
@@ -94,10 +119,9 @@ div[class$="overlay"] {
 // Cart Styles
 
 #slidingPanel {
-  position: fixed;
-  top: 0;
-  right: -320px;
+  position: relative;
   width: 640px;
+  margin-right: -320px;
   height: 100%;
   background-color: $white;
   border-color: $med-grey;
@@ -202,9 +226,6 @@ div[class$="overlay"] {
 }
 
 .cart-summary {
-  position: fixed;
-  bottom: 0;
-  width: 320px;
   padding: $large-spacing $base-spacing;
   background-color: $es-blue;
   color: $white;
@@ -248,19 +269,10 @@ body.payment-active {
     @include transition(all .5s ease-in);
     z-index: 5;
   }
-  .cart-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.12);
-    @include transition(all .5s ease-in);
-    z-index: 15;
-
-  }
 
   #slidingPanel {
+    position: fixed;
     right: 0;
+    margin-right: 0;
   }
 }
