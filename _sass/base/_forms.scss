@@ -19,6 +19,7 @@ label {
   text-transform: uppercase;
   color: $dark-grey;
   line-height: 2;
+  letter-spacing: .05em;
 
   &.required::after {
     content: "*";

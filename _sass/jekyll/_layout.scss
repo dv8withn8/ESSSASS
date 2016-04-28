@@ -6,31 +6,41 @@
     margin: 0;
   }
 }
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: $body-grey;
-  height: 100%;
-  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
-  @include no-padding("all");
+#libNav,
+#library {
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
 }
-.page-content {
 
+#library {
+  flex: 1;
+  padding-top: 2em;
 }
+
+#libNav {
+  width: 200px;
+  height: 100%;
+  @include no-padding("all");
+  background-color: $body-grey;
+}
+
 .examples,
 .snippets {
 
 }
 .snippets {
   margin: $large-spacing 0;
+  max-width: 600px;
 }
 
-article {
-  margin-top: 2em;
+#library article {
+  margin: 0 2em 2em;
   padding: 0 2em 2em;
-  border-bottom: 1px solid $ghost-grey;
+  border: 1px solid $grey;
   border-radius: $base-border-radius * 2;
+  background-color: #fff;
   @include transition(all .5s ease-in-out);
   header > h1 {
     margin-bottom: $large-spacing;
@@ -41,7 +51,6 @@ article {
 }
 
 nav {
-  color: #fff;
   h5 {
     margin: $large-spacing;
   }
@@ -49,12 +58,12 @@ nav {
     display: block;
   }
   a {
+    color: white;
     display: block;
-    color: #fff;
     padding: $small-spacing $large-spacing;
     &:hover {
-      background: $es-blue;
-      color: #fff;
+      color: white;
+      background-color: $es-blue;
       text-decoration: none;
     }
   }
