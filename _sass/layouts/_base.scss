@@ -38,10 +38,6 @@ div[class$="overlay"] {
   }
 }
 
-.context .wrapper {
-  width: calc(100vw - 365px);
-}
-
 .context-data label {
     color: $bg-grey;
 }
@@ -60,13 +56,37 @@ div[class$="overlay"] {
 }
 
 #viewContainer {
-  display: flex;
+  @include display(flex);
   overflow: hidden;
   height: 100vh;
   position: relative;
   width: 100%;
   backface-visibility: hidden;
   will-change: overflow;
+}
+
+#contentContainer {
+  flex: 1;
+}
+
+.inner {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include media(large) {
+    @include flex-direction(row);
+   }
+}
+
+#viewHeader {
+  @include media(large) {
+    width: 450px;
+  }
+}
+#viewContent {
+  @include media(large) {
+    flex: 1;
+  }
 }
 
 .wrapper {
@@ -85,11 +105,6 @@ div[class$="overlay"] {
 #slidingPanel::-webkit-scrollbar {
   display: none;
 }
-
-#contentContainer {
-  flex: 1;
-}
-
 // With Flexbox
 .oppContact-details {
   @include align-items(flex-start);

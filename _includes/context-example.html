@@ -22,3 +22,78 @@
     </div>
   </div>
 </section>
+
+<div class="wrapper">
+  <article class="ex oppContacts">
+    <div class="panel-group" id="relations-tabs" role="tablist" aria-multiselectable="true">
+      <ul class="nav nav-tabs">
+        <li class="active">
+          <a data-toggle="tab" href="#oppContact-primary">Primary Contact</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#oppContact-alts">Alternate Contacts</a>
+        </li>
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Actions <i class="caret"></i></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+                <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+            </ul>
+        </li>
+      </ul>
+      <div class="tab-content">
+
+        <section id="oppContact-primary" class="tab-pane fade in active">
+          <!-- Flexbox Markup -->
+          <ul class="oppContact-details">
+            <li>
+              <h6>Contact Name</h6>
+              Bob Barker
+            </li>
+            <li>
+              <h6>Primary Phone</h6>
+              (555) 555-5555
+            </li>
+            <li>
+              <h6>Primary Email</h6>
+              bob@thepriceisright.com
+            </li>
+            <li>
+              <h6>Address</h6>
+              1234 Sesame St., Las Vegas, NV 68456
+            </li>
+          </ul>
+        </section>
+
+        <section id="oppContact-alts" class="tab-pane fade">
+          <!-- Bootstrap Grid -->
+          <ul class="oppContact-details2">
+            <div class="row">
+              <li class="col-md-12">
+                <h6>Contact Name</h6>
+                Drew Carrey
+              </li>
+            </div>
+            <div class="row">
+              <li class="col-md-6">
+                <h6>Primary Phone</h6>
+                (555) 555-1234
+              </li>
+              <li class="col-md-6">
+                <h6>Primary Email</h6>
+                drew@thepriceisright.com
+              </li>
+            </div>
+            <div class="row">
+              <li class="col-md-12">
+                <h6>Address</h6>
+                1234 Sesame St., Las Vegas, NV 68456
+              </li>
+            </div>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </article>
+</div>

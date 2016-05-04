@@ -13,8 +13,7 @@
   font-size: $font-size-small;
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
-  line-height: 1;
-  padding: .704em 1.5em;
+  padding: 7px $large-spacing;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
@@ -172,7 +171,7 @@ button.close,
 
 .btn-small {
   font-size: $font-size-smaller;
-  padding: $small-spacing $base-spacing;
+  padding: 4px $base-spacing;
 }
 
 .btn-fullWidth {

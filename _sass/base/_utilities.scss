@@ -24,6 +24,20 @@
     }
   }
 
+/*
+ * Media Queries
+ *
+ * Breakpoint values defined in _variables.scss
+ */
+
+ @mixin media($point) {
+  @if $point == small {
+    @media (min-width: $bp-small) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $bp-large) { @content; }
+  }
+}
 
 /*
  * Status Scale

@@ -4,11 +4,13 @@
   <body>
     <div id="viewContainer">
       <div id="contentContainer">
-        <div id="viewHeader">
-         {% include context-example.html %}
-        </div>
-        <div class="wrapper">
-          {{ content }}
+        <div class="inner">
+          <div id="viewHeader">
+           {% include context-example.html %}
+          </div>
+          <div id="viewContent">
+            {{ content }}
+          </div>
         </div>
       </div>
 

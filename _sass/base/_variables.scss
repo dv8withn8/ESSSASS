@@ -103,6 +103,10 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $light
 $base-duration: 150ms;
 $base-timing: ease;
 
+// Media Query Breakpoints
+$bp-small: 1024px;
+$bp-large: 1400px;
+
 // Panels (aka accordians)
 $panel-bg:                    #fff !default;
 $panel-body-padding:          $small-spacing !default;
