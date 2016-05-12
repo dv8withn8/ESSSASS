@@ -11,11 +11,11 @@
   display: inline-block;
   font-family: $base-font-family;
   font-size: $font-size-small;
-  -webkit-font-smoothing: antialiased;
   font-weight: 700;
   padding: 7px $large-spacing;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: .05em;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
