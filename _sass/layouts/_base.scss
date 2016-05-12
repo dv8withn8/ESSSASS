@@ -49,6 +49,11 @@ div[class$="overlay"] {
   -webkit-column-gap: 3em;
   -moz-column-gap: 3em;
   column-gap: 3em;
+  @include media(large) {
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+  }
 
   li {
     margin-bottom: $base-spacing;
@@ -81,11 +86,50 @@ div[class$="overlay"] {
 #viewHeader {
   @include media(large) {
     width: 450px;
+    height: 100vh;
+    background-color: $body-grey;
+  }
+
+  .nav-tabs {
+    @include media(large) {
+      display: none;
+    }
   }
 }
+
 #viewContent {
   @include media(large) {
     flex: 1;
+    padding-top: 3em;
+  }
+}
+
+#relations-tabs > .actions {
+  display: none;
+  @include media(large) {
+    display: block !important;
+  }
+}
+
+#relations-tabs .tab-content > .tab-pane {
+  @include media(large) {
+    display: block !important;
+  }
+}
+
+#relations-tabs .tab-content {
+  @include media(large) {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+  }
+  h3 {
+    display: none;
+    @include media(large) {
+      display: block
+    }
   }
 }
 
@@ -248,6 +292,18 @@ div[class$="overlay"] {
 
   > .inner {
     position: relative;
+    @include justify-content(flex-end);
+    text-align: right;
+    font-size: $font-size-larger;
+    font-weight: 700;
+    margin-bottom: $large-spacing;
+  }
+
+  .title {
+    @include flex(2);
+  }
+  .amount {
+    @include flex(1);
   }
 }
 

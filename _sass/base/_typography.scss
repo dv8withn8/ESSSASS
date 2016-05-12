@@ -4,8 +4,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   font-weight: 400;
-  -webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
 }
 
@@ -94,7 +93,7 @@ picture {
 .help-block,
 caption {
   font-size: $font-size-small;
-  color: $med-grey;
+  color: $dark-grey;
 }
 
 .meta {

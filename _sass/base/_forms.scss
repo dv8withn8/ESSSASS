@@ -105,8 +105,7 @@ input[type="file"] {
 .radio {
   label {
     text-transform: none;
-    color: $body-grey;
-    font-size: modular-scale(0);
+    font-size: modular-scale(-1);
   }
 }
 
