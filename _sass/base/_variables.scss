@@ -39,6 +39,7 @@ $yellow-orange: rgb(254, 191, 0);
 $orange: rgb(254, 131, 0);
 $ghost-grey: rgb(243, 243, 243);
 $bright-green: rgb(201, 225, 15);
+$bluish-grey: rgb(144, 147, 156);
 
 // Status Scale
                                       //REAL WORLD MEANINGS
@@ -100,7 +101,7 @@ $form-box-shadow: inset 0 1px 4px rgba(#000, 0.2);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($es-green, $lightness: -5%, $alpha: -0.3);
 
 // Animations
-$base-duration: 150ms;
+$base-duration: 100ms;
 $base-timing: ease;
 
 // Media Query Breakpoints
