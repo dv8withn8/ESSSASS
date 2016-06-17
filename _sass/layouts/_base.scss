@@ -23,7 +23,7 @@ div[class$="overlay"] {
 }
 
 .context {
-  @include padding($base-spacing 0 $large-spacing * 3);
+  @include padding($large-spacing 0 $large-spacing * 3);
   margin-bottom: -2.25em;
   background-color: $body-grey;
   color: $white;
@@ -34,7 +34,12 @@ div[class$="overlay"] {
 
   h1 {
     font-weight: 700;
-    margin-bottom: 0;
+    margin: 0;
+  }
+
+  label,
+  h6 {
+    color: $inverse-label-grey;
   }
 }
 
@@ -86,8 +91,12 @@ div[class$="overlay"] {
 #viewHeader {
   @include media(large) {
     width: 450px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $body-grey;
+    label,
+    h6 {
+      color: $inverse-label-grey;
+    }
   }
 
   .nav-tabs {

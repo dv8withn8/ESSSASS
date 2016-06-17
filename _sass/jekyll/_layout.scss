@@ -32,7 +32,6 @@
 }
 .snippets {
   margin: $large-spacing 0;
-  max-width: 600px;
 }
 
 #library article {
@@ -48,6 +47,10 @@
     color: $med-grey;
     @include transition(all .5s ease-in-out);
   }
+}
+
+pre { //Override Bootstrap's "auto" which generates an extra scroll container
+  overflow: initial;
 }
 
 nav {

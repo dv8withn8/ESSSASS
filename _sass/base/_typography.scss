@@ -1,8 +1,12 @@
+html {
+  font-size: $font-size-base;
+}
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: $base-font-size;
+  font-size: $font-size-base;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
@@ -49,7 +53,6 @@ h4 {
 	margin-top: $h4-margin-top;
 	margin-bottom: $h4-margin-bottom;
 }
-
 h6 {
 	font-size: $font-size-smaller;
 	font-weight: 400;
@@ -57,7 +60,7 @@ h6 {
 	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	color: $bluish-grey;
+	color: $label-grey;
 }
 
 p {

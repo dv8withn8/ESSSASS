@@ -1,5 +1,6 @@
 // Modular Scale
-$em-base: 16px;
+$rem-base: 16px !default;
+$modular-scale-base: rem($rem-base);
 $modular-scale-ratio: $major-second;
 
 // Typography
@@ -8,9 +9,6 @@ $modular-scale-ratio: $major-second;
 @include font-face("Lato", "../fonts/Lato-Bold", 700, $file-formats: eot woff2 woff);
 
 $base-font-family: "Lato", Helvetica, "Lucida Grande", Arial, sans-serif;
-
-// Font Sizes
-$base-font-size: $em-base;
 
 // Line height
 $base-line-height: 1.5; //24px
@@ -39,7 +37,8 @@ $yellow-orange: rgb(254, 191, 0);
 $orange: rgb(254, 131, 0);
 $ghost-grey: rgb(243, 243, 243);
 $bright-green: rgb(201, 225, 15);
-$bluish-grey: rgb(144, 147, 156);
+$label-grey: rgb(115, 118, 126);
+$inverse-label-grey: rgb(200, 203, 211);
 
 // Status Scale
                                       //REAL WORLD MEANINGS
