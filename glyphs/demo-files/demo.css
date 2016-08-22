@@ -1,6 +1,11 @@
+.bgc1 {
+  margin-left: 2em;
+}
 .glyph {
-	margin-bottom: 4em;
+	padding-right: 1em;
 	overflow: hidden;
+	width: 48%;
+	float: left;
 }
 .glyph fieldset {
   border: none;

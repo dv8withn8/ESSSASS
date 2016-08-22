@@ -128,6 +128,7 @@
   color: $es-blue;
   background: none;
   border: none;
+  padding: .5em;
 
   &:hover,
 	&:focus {
@@ -179,3 +180,17 @@ button.close,
   display: block;
   width: 100%;
 }
+
+/* Button Animations */
+
+.spin {
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transform-origin: 46% 50%; //Counters some wobble
+  overflow:hidden;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
